@@ -6,8 +6,8 @@
 html {
     height: 100%;
     background: #0F2027;
-    background: -webkit-linear-gradient(to bottom, #ffffff, #203A43, #0F2027);
-    background: linear-gradient(to bottom, #333333, #222222, #111111);
+    background: -webkit-linear-gradient(to bottom, #202020, #151515, #101010);
+    background: linear-gradient(to bottom, #202020, #151515, #101010);
     
 }
 
