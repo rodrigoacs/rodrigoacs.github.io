@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     font-family: Montserrat, sans-serif;
-    background-color: black;
+}
+
+html {
+    height: 100%;
+    background: #0F2027;
+    background: -webkit-linear-gradient(to bottom, #ffffff, #203A43, #0F2027);
+    background: linear-gradient(to bottom, #333333, #222222, #111111);
+    
 }
 
 h1 {
     text-align: center;
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px 450px;
 }
