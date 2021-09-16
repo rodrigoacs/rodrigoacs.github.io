@@ -8,19 +8,29 @@ html {
     background: #0F2027;
     background: -webkit-linear-gradient(to bottom, #202020, #151515, #101010);
     background: linear-gradient(to bottom, #202020, #151515, #101010);
+    /*background: #ECE9E6;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);*/
 }
 
 table {
     margin-left: auto;
-    margin-right: auto;
+    margin-top: 20px;
+}
+
+.acs {
+    margin-right: 350px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
 }
 
 a {
-    background-color: transparent;
-    border: none;
-    color: rgb(255, 255, 255);
+    background-image: linear-gradient( 135deg, #69FF97 10%, #00E4FF 100%);
+    border-radius: 100px;
+    color: rgba(0, 0, 0, 1);
     cursor: pointer;
-    padding: 10px 100px;
+    padding: 10px 50px;
+    margin: 5px;
     font-size: 20px;
     text-decoration: none;
 }
@@ -38,6 +48,14 @@ h1 {
 
 .about {
     text-align: center;
-    padding: 20px;
+    padding: 50px;
     color: rgba(255, 255, 255, 1);
+}
+
+.footer {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 99%;
 }
