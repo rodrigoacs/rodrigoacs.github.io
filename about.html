@@ -15,11 +15,14 @@
 <body>
     <nav>
         <table>
-            <th><div class="acs">ACS</div></th>
+            <th>
+                <div class="acs">ACS</div>
+            </th>
             <th><a href="index.html">home</a></th>
             <th><a href="about.html">about</a></th>
             <th><a href="projects.html">projects</a></th>
             <th><a href="contact.html">contact</a></th>
+            <th><button class="btn" onclick="myFunction()"><img class="light-bulb"src="light-bulb.png" alt="toggle dark/light"></button></th>
         </table>
     </nav>
     <h1>work in progress</h1>
@@ -27,5 +30,12 @@
         <div class="footer">rodapé</div>
     </footer>
 </body>
+
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark");
+    }
+</script>
 
 </html>
