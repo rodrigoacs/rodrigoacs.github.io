@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 
-    <title>About</title>
+    <title>About [WIP]</title>
 </head>
 
 <body>
@@ -22,10 +22,24 @@
             <th><a href="about.html">about</a></th>
             <th><a href="projects.html">projects</a></th>
             <th><a href="contact.html">contact</a></th>
-            <th><button class="btn" onclick="myFunction()"><img class="light-bulb"src="light-bulb.png" alt="toggle dark/light"></button></th>
+            <th><button class="btn" onclick="myFunction()"><img class="light-bulb" src="light-bulb.png"
+                        alt="toggle dark/light"></button></th>
         </table>
     </nav>
-    <h1>work in progress</h1>
+
+    <img src="profile-pic.png" alt="profile-pic" class="profile-pic">
+    <div class="line"></div>
+    <h2 class="about-title">about me</h2>
+    <p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore soluta quos excepturi unde
+        officia adipisci ab aspernatur corrupti ratione ullam tempore, hic fugit dolorum quas voluptas magni voluptatem!
+        Consequatur, officia!</p>
+    <h2 class="skills-title">skills</h2>
+    <p class="skills-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit iure nostrum expedita amet
+        error! Veniam, provident. Tenetur odio repellendus, possimus quae nesciunt repellat nostrum cumque vel atque
+        dolores. Esse, sed!</p>
+    <span class="name"><strong>Rodrigo Soares</strong></span>
+    <span class="ufsj">Computer Science student at UFSJ
+    </span>
     <footer>
         <div class="footer">rodapé</div>
     </footer>
@@ -34,7 +48,7 @@
 <script>
     function myFunction() {
         var element = document.body;
-        element.classList.toggle("dark");
+        element.classList.toggle("light");
     }
 </script>
 
