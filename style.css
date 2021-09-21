@@ -145,3 +145,22 @@ a {
     top: 58%;
     left: 3.5%;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {
+    display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #ff0000;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color: rgb(94, 0, 0);
+    border-radius: 6px;
+}
