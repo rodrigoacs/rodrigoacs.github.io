@@ -1,36 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 * {
     margin: 0;
-    border: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: #111111;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    height: 100vh;
 }
 
 h1 {
-    color: white;
     text-align: center;
+    color: #ffffff;
 }
 
 .container {
     display: grid;
     grid-template-columns: 6vw 6vw 6vw 6vw;
-    grid-template-rows: 6vw 6vw 6vw 6vw;
-    grid-template-areas: "ln1 ln1 ln1 ln1" "ln2 ln2 ln2 ln2" "ln3 ln3 ln3 ln3" "ln4 ln4 ln4 ln4";
+    grid-template-rows: 6vw 6vw 6vw 6vw 6vw;
     justify-content: center;
     align-content: center;
 }
 
 button {
+    color: rgb(0, 0, 0);
+    transition-duration: 0.1s;
     font-size: 4vw;
+    background: rgba( 255, 255, 255, 0.60);
+    backdrop-filter: blur( 4px);
+}
+
+button:hover {
+    filter: invert(100%);
+}
+
+button:active {
+    font-size: 3vw;
 }
 
 .screen {
-    background: linear-gradient(90deg, hsla(5, 95%, 50%, 1) 0%, hsla(343, 100%, 50%, 1) 100%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 24vw;
+    background: rgba( 255, 255, 255, 0.4);
+    backdrop-filter: blur( 4px);
     font-size: 4vw;
     height: 6vw;
     width: 24vw;
@@ -39,29 +57,48 @@ button {
     border-radius: 2vw 2vw 0vw 0vw;
 }
 
-.secondLine {
-    grid-area: ln1, ln1, ln1, ln1;
-}
-
-.thirdLine {
-    grid-area: ln2, ln2, ln2, ln2;
-}
-
-.fourthLine {
-    grid-area: ln3, ln3, ln3, ln3;
-}
-
-.fifthLine {
-    grid-area: ln4, ln4, ln4, ln4;
-}
-
-.operationCollum {
-    background: linear-gradient(90deg, hsla(5, 95%, 50%, 1) 0%, hsla(343, 100%, 50%, 1) 100%);
-}
-
 .roundedBorder {
     border-radius: 0vw 0vw 0vw 2vw;
 }
+
 .roundedBorder2 {
     border-radius: 0vw 0vw 2vw 0vw;
+}
+
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.dot {
+    grid-column-start: 3;
+}
+
+.equal {
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.plus {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+a {
+    position: absolute;
+    background: rgba( 255, 255, 255, 0.4);
+    backdrop-filter: blur( 4px);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.backHome {
+    filter: invert(100%) sepia(100%) saturate(16%) hue-rotate(226deg) brightness(103%) contrast(106%);
+    height: 25px;
 }

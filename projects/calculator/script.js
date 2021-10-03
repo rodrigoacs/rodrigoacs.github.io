@@ -90,6 +90,13 @@ function btnDiv() {
     firstOperatorInt = parseInt(firstOperator)
     operation = "/"
 }
+function clearScreen() {
+    let screen = window.document.getElementById('calculatorScreen')
+    screen.innerHTML = ""
+    firstOperator = ""
+    firstOperatorInt = ""
+    secondOperator = ""
+}
 function btnRes() {
     let res;
     let screen;
@@ -119,4 +126,8 @@ function btnRes() {
         default:
             break;
     }
+    firstOperator = ""
+    firstOperatorInt = ""
+    secondOperator = ""
 }
+
