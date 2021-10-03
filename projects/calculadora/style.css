@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #111111;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 6vw 6vw 6vw 6vw;
+    grid-template-rows: 6vw 6vw 6vw 6vw;
+    grid-template-areas: "ln1 ln1 ln1 ln1" "ln2 ln2 ln2 ln2" "ln3 ln3 ln3 ln3" "ln4 ln4 ln4 ln4";
+    justify-content: center;
+    align-content: center;
+}
+
+button {
+    font-size: 4vw;
+}
+
+.screen {
+    background: linear-gradient(90deg, hsla(5, 95%, 50%, 1) 0%, hsla(343, 100%, 50%, 1) 100%);
+    font-size: 4vw;
+    height: 6vw;
+    width: 24vw;
+    margin-left: 38vw;
+    text-align: center;
+    border-radius: 2vw 2vw 0vw 0vw;
+}
+
+.secondLine {
+    grid-area: ln1, ln1, ln1, ln1;
+}
+
+.thirdLine {
+    grid-area: ln2, ln2, ln2, ln2;
+}
+
+.fourthLine {
+    grid-area: ln3, ln3, ln3, ln3;
+}
+
+.fifthLine {
+    grid-area: ln4, ln4, ln4, ln4;
+}
+
+.operationCollum {
+    background: linear-gradient(90deg, hsla(5, 95%, 50%, 1) 0%, hsla(343, 100%, 50%, 1) 100%);
+}
+
+.roundedBorder {
+    border-radius: 0vw 0vw 0vw 2vw;
+}
+.roundedBorder2 {
+    border-radius: 0vw 0vw 2vw 0vw;
+}
