@@ -2,7 +2,6 @@
 git add --all
 git commit -m "text"
 git push -u origin main
-ta aqui só até eu decorar esses comandos KKKKKKK
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -13,43 +12,51 @@ ta aqui só até eu decorar esses comandos KKKKKKK
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="script.js"></script>
     <title>Home [WIP]</title>
 </head>
 
 <body>
-    <nav>
-        <table>
-            <th>
-                <div class="acs">ACS</div>
-            </th>
-            <th><a href="index.html">home</a></th>
-            <th><a href="about.html">about</a></th>
-            <th><a href="projects.html">projects</a></th>
-            <th><a href="contact.html">contact</a></th>
-            <th><button class="btn" onclick="myFunction()"><img class="light-bulb" src="light-bulb.png"
-                        alt="toggle dark/light"></button></th>
-        </table>
+    <nav class="navFlex">
+        <h1 class="navFlexItem navIcon">ACS</h1>
+        <a class="navFlexItem navLink" href="#aboutMe">sobre mim</a>
+        <a class="navFlexItem navLink" href="#projects">projetos</a>
+        <a class="navFlexItem navLink" href="#contact">contato</a>
+        <button class="navFlex btn" onclick="toggleDark()"><img class="light-bulb" src="light-bulb.png"></button>
     </nav>
+    <main>
+        <section id="aboutMe"><br>
+            <div class="aboutMeStyle">
+                <h1>Oi, meu nome é Rodrigo</h1>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sapiente eum dolorem illum odit
+                    at
+                    delectus ipsum eveniet recusandae doloribus ducimus facere dolore magni aperiam voluptates, aliquam
+                    repellendus totam excepturi.</span>
+            </div>
+        </section>
 
-    <div class="intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptate nisi quidem ipsam
-        neque saepe, facilis, sint laudantium ratione nam quis aliquid rerum sit illo consequuntur assumenda minima
-        explicabo natus.
-    </div>
+        <section id="projects"><br>
+            <div class="projectsStyle">
+                <h1>Projetos</h1>
+                <span><a href="../rodrigoacs.github.io/projects/calculator/index.html">Calculadora</a></span>
+            </div>
+        </section>
+        <section id="contact"><br>
+            <div class="contactStyle">
+                <h1>entre em contato</h1>
+            </div>
+        </section>
+    </main>
+
 
     <footer>
         <div class="footer">
-            <div>Icons made by <a class="aWithout" href="https://www.freepik.com" title="Freepik">Freepik</a> from <a class="aWithout"
-                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <ahref="https:
+                    //www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
 
     </footer>
 </body>
 
-<script>
-    function myFunction() {
-        var element = document.body;
-        element.classList.toggle("light");
-    }
-</script>
 
 </html>
