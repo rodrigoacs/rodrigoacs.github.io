@@ -24,8 +24,11 @@ body {
 
 main {
     background-color: #101010;
-    background-image: radial-gradient(at 47% 33%, hsl(277.41, 100%, 50%) 0, transparent 59%), radial-gradient(at 82% 65%, hsl(18.12, 100%, 50%) 0, transparent 55%);
-    background-repeat: repeat;
+    background-image: 
+                url(https://images.unsplash.com/photo-1614852206732-6728910dc175?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
+    background-attachment: fixed;
+    background-position-y: center;
+    background-position-x: center;
 }
 
 .aboutMeStyle {
@@ -59,6 +62,10 @@ main {
     background-color: rgba(6, 6, 7, 0.75);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.calculator {
+    color: #fff;
 }
 
 section {
@@ -115,3 +122,16 @@ nav {
 .test {
     background-color: red;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #101010;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #252525;
+    border-radius: 4px;
+  }
