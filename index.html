@@ -17,38 +17,54 @@ git push -u origin main
 </head>
 
 <body>
-    <nav class="navFlex">
-        <h1 class="navFlexItem navIcon">ACS</h1>
-        <a class="navFlexItem navLink" href="#aboutMe">sobre mim</a>
-        <a class="navFlexItem navLink" href="#projects">projetos</a>
-        <a class="navFlexItem navLink" href="#contact">contato</a>
-        <button class="navFlex btn" onclick="toggleDark()"><img class="light-bulb" src="light-bulb.png"></button>
+    <nav id="navStyle" class="navFlex">
+        <h1 class="navIcon">&nbsp;ACS&nbsp;</h1>
+        <span class="navFlexItemSpan"></span>
+        <a id="linkOne" class="navFlexItem navLink" href="#aboutMe">sobre mim</a>
+        <a id="linkTwo" class="navFlexItem navLink" href="#projects">projetos</a>
+        <a id="linkThree" class="navFlexItem navLink" href="#contact">contato</a>
+        <input type="checkbox" class="navFlexItem slider" onclick="toggleDark()"></input>
     </nav>
-    <main>
+    <main id="mainElement">
         <section id="aboutMe"><br>
-            <div class="aboutMeStyle">
-                <h1>Oi, meu nome é Rodrigo</h1>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sapiente eum dolorem illum odit
-                    at
-                    delectus ipsum eveniet recusandae doloribus ducimus facere dolore magni aperiam voluptates, aliquam
-                    repellendus totam excepturi.</span>
+            <div id="sectionAboutMe" class="sectionStyle">
+                <h1 class="sectionTittle">Oi, meu nome é Rodrigo</h1>
+                <span class="aboutMeText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nisl sit amet velit vehicula commodo. Morbi egestas ullamcorper diam, sit amet sagittis turpis cursus sit amet. Donec commodo mi erat, ut ornare magna tristique quis. Cras urna sem, lobortis sit amet mi vel, mattis aliquet velit. Donec congue, eros ac semper placerat, libero neque sollicitudin nisl, sed elementum orci velit non est. Donec ligula ex, aliquet in suscipit sed, mattis eu nisi. Curabitur vestibulum velit sit amet justo fringilla lobortis. Nullam in lorem sit amet urna varius tincidunt in non nisi. Etiam dapibus, metus ut tristique pharetra, turpis nibh fringilla est, vel ultrices lacus nulla non nibh. Aliquam dapibus mi est, vitae semper purus ornare a. Nunc nibh tortor, condimentum vitae vehicula eget, convallis non ligula. Aliquam placerat venenatis sem vel viverra. Suspendisse viverra posuere lectus volutpat iaculis. Quisque id augue sit amet purus commodo dapibus.</span>
             </div>
         </section>
 
         <section id="projects"><br>
-            <div class="projectsStyle">
-                <h1>Projetos</h1>
-                <span><a class="calculator"
-                        href="./projects/calculator/index.html">Calculadora</a></span><br><br><br><br><br><br><br><br><br>
+            <div id="sectionProjects" class="sectionStyle">
+                <h1 class="sectionTittle">Projetos</h1>
+                <span class="projectsContainer">
+                    <a class="projectsLinks" href="./projects/calculator/index.html"><img
+                            src="./images/calculator_preview.png" class="projectPreview"><br>calculadora</a>
+                    <a class="projectsLinks" href="
+                    #projects"><img src="./images/em_breve.png" class="projectPreview"><br>em breve</a>
+                    <a class="projectsLinks" href="
+                    #projects"><img src="./images/em_breve.png" class="projectPreview"><br>em breve</a>
+                    <a class="projectsLinks" href="
+                    #projects"><img src="./images/em_breve.png" class="projectPreview"><br>em breve</a>
+                    <a class="projectsLinks" href="
+                    #projects"><img src="./images/em_breve.png" class="projectPreview"><br>em breve</a>
+                    <a class="projectsLinks" href="
+                    #projects"><img src="./images/em_breve.png" class="projectPreview"><br>em breve</a>
+                </span>
             </div>
         </section>
+
         <section id="contact"><br>
-            <div class="contactStyle">
-                <h1>entre em contato</h1>
+            <div id="sectionContact" class="sectionStyle">
+                <h1 class="sectionTittle">entre em contato</h1>
+                <span class="contactContainer">
+                    <input class="contactInput" id="name" type="text" placeholder="nome">
+                    <input class="contactInput" id="email" type="email" placeholder="email">
+                    <textarea class="contactInputContent" id="text" name="text" placeholder="escreva algo"></textarea>
+                    <button class="contactInputSubmit" type="submit">enviar</button>
+                </span>
             </div>
         </section>
     </main>
-
 
     <footer>
         <div class="footer">

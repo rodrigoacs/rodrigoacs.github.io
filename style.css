@@ -8,10 +8,40 @@
 }
 
 .light {
-    background: #ECE9E6;
-    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
-    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    background: url(./images/wbg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: center;
+    background-position-x: center;
     color: rgb(0, 0, 0);
+}
+
+.lightGlass {
+    margin: 10vw;
+    padding: 2vw;
+    --color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur( 10px);
+    -webkit-backdrop-filter: blur( 10px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.048);
+}
+
+.navLight {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #000;
+}
+
+.navLightLink {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 html {
@@ -23,49 +53,52 @@ body {
 }
 
 main {
-    background-color: #101010;
-    background-image: 
-                url(https://images.unsplash.com/photo-1614852206732-6728910dc175?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
+    background: url(./images/bg.png);
+    background-size: cover;
     background-attachment: fixed;
     background-position-y: center;
     background-position-x: center;
 }
 
-.aboutMeStyle {
-    margin: 10vw;
-    padding: 3vh;
-    color: white;
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(6, 6, 7, 0.75);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
+.sectionTittle {
+    padding-bottom: 1vw;
 }
 
-.projectsStyle {
+.sectionStyle {
     margin: 10vw;
-    padding: 3vh;
+    padding: 2vw;
     color: white;
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(6, 6, 7, 0.75);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
+    background: rgba( 0, 0, 0, 0.6);
+    backdrop-filter: blur( 10px);
+    -webkit-backdrop-filter: blur( 10px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.048);
 }
 
-.contactStyle {
-    margin: 10vw;
-    padding: 3vh;
-    color: white;
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(6, 6, 7, 0.75);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
+.projectsContainer {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: 15vw 15vw;
+    justify-content: space-between;
 }
 
-.calculator {
-    color: #fff;
+.projectsLinks {
+    color: var(--color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.projectPreview {
+    width: 20vw;
+    filter: grayscale(100%) blur(3px);
+    transition-duration: .2s;
+    border-radius: 20px;
+}
+
+.projectPreview:hover {
+    filter: grayscale(0%) blur(0px);
+    border-radius: 5px;
 }
 
 section {
@@ -79,6 +112,7 @@ nav {
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(6, 6, 7, 0.75);
+    color: #fff;
 }
 
 .navFlex {
@@ -86,6 +120,10 @@ nav {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    padding-top: .8vw;
+    padding-bottom: .8vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 .navFlexItem {
@@ -93,19 +131,23 @@ nav {
 }
 
 .navIcon {
+    font-size: 35px;
+    text-align: center;
+}
+
+.navFlexItemSpan {
     flex-grow: 1;
-    color: #ffffff;
 }
 
 .navLink {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
 }
 
 .navLink:hover {
-    filter: opacity(50%);
+    filter: opacity(100%);
 }
 
 .btn {
@@ -119,19 +161,66 @@ nav {
     height: 35px;
 }
 
-.test {
-    background-color: red;
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactInput {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10vw;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color);
+    backdrop-filter: blur( 7px);
+    width: 40vw;
+    transition-duration: .2s;
+}
+
+.contactInputContent {
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 1vw;
+    color: var(--color);
+    backdrop-filter: blur( 7px);
+    width: 40vw;
+    transition-duration: .2s;
+    resize: none;
+}
+
+.contactInputSubmit {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10vw;
+    width: 40vw;
+    background: #ff00cc;
+    background: -webkit-linear-gradient(to right, #8c00ff, #ff00cc);
+    background: linear-gradient(to right, #8c00ff, #ff00cc);
+    transition-duration: .2s;
+}
+
+.contactInputSubmit:hover {
+    background: #ff00cc;
+    background: -webkit-linear-gradient(to left, #8c00ff, #ff00cc);
+    background: linear-gradient(to left, #8c00ff, #ff00cc);
+}
+
+.contactInput:hover, .contactInputContent:hover {
+    background-color: rgba(34, 34, 34, 0.5);
 }
 
 ::-webkit-scrollbar {
     width: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background-color: #101010;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background-color: #252525;
     border-radius: 4px;
-  }
+}
