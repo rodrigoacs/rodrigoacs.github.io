@@ -30,3 +30,7 @@ function toggleDark() {
     lightLink.classList.toggle("navLightLink");
 
 }
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+}
