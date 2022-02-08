@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <script src="script.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Home [WIP]</title>
 </head>
 
@@ -19,10 +18,10 @@
         <a id="linkOne" class="navFlexItem navLink" href="#aboutMe">Sobre Mim</a>
         <a id="linkTwo" class="navFlexItem navLink" href="#projects">Projetos</a>
         <a id="linkThree" class="navFlexItem navLink" href="#contact">Contato</a>
-        <input type="checkbox" class="navFlexItem slider" onclick="toggleDark()"></input>
+        <button type="checkbox" class="navFlexItem slider" onclick="toggleDark()">dark/light</button>
     </nav>
-    <main id="mainElement">
 
+    <main id="mainElement">
         <section id="aboutMe"><br>
             <div id="sectionAboutMe" class="sectionStyle">
                 <h1 class="sectionTittle">Oi, meu nome é Rodrigo</h1>
@@ -31,7 +30,6 @@
                     earum iste? Mollitia asperiores quis cum aspernatur.</span>
             </div>
         </section>
-
         <section id="projects"><br>
             <div id="sectionProjects" class="sectionStyle">
                 <h1 class="sectionTittle">Projetos</h1>
@@ -72,9 +70,7 @@
                 <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
                 <button onclick="scrollToTop()">voltar ao topo</button>
             </div>
-
         </div>
-
     </footer>
 </body>
 
