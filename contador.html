@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: monospace;
+            font-size: 100px;
+            text-align: center;
+        }
+
+        button,
+        button:disabled {
+            background-color: lightgray;
+            color: #000;
+            border-color: #000;
+            font-size: 40px;
+            opacity: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tela">00:00:00</div>
+    <button id="ativar" onclick="ativar()"><i class="fa fa-play"></i></button>
+    <button onclick="desativar()"><i class="fa fa-pause"></i></button>
+    <button onclick="resetar()"><i class="fa fa-refresh"></i></button>
+</body>
+
+<script>
+    let contadorNumero = 0
+    let parador = 1
+    let contadorFuncao
+
+    function resetar() {
+        clearInterval(contadorFuncao)
+        document.getElementById('ativar').disabled = false
+        document.getElementById('tela').innerHTML = '00:00:00'
+        contadorNumero = 0
+    }
+
+    function desativar() {
+        clearInterval(contadorFuncao)
+        document.getElementById('ativar').disabled = false
+        parador = 0
+    }
+
+    function ativar() {
+        parador = 1
+        document.getElementById('ativar').disabled = true
+        contadorFuncao = setInterval(() => {
+            if (parador) {
+                document.getElementById('tela').innerHTML = new Date(contadorNumero * 1000).toISOString().substr(11, 8);
+                contadorNumero++
+            }
+        }, 1000);
+    }
+
+</script>
+
+</html>
