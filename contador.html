@@ -9,31 +9,57 @@
     <title>Document</title>
     <style>
         * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            vertical-align: baseline;
+            list-style: none;
             font-family: monospace;
-            font-size: 100px;
+            background-color: #090909;
+            color: #fff;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #tela {
             text-align: center;
+            width: 300px;
+            font-size: 5em;
         }
 
         button,
         button:disabled {
-            background-color: lightgray;
-            color: #000;
-            border-color: #000;
-            font-size: 40px;
+            height: 100px;
+            width: 100px;
+            font-size: 3em;
             opacity: 100%;
         }
     </style>
 </head>
 
-<body>
-    <div id="tela">00:00:00</div>
-    <button id="ativar" onclick="ativar()"><i class="fa fa-play"></i></button>
-    <button onclick="desativar()"><i class="fa fa-pause"></i></button>
-    <button onclick="resetar()"><i class="fa fa-refresh"></i></button>
+<body class="container">
+    <div class="">
+        <div id="tela">00:00:00</div>
+        <div class="botoes">
+            <button id="ativar" onclick="ativar()"><i class="fa fa-play"></i></button><button onclick="desativar()"><i
+                    class="fa fa-pause"></i></button><button onclick="resetar()"><i class="fa fa-refresh"></i></button>
+        </div>
+    </div>
+
 </body>
 
 <script>
-    let contadorNumero = 0
+    let contadorNumero = 1
     let parador = 1
     let contadorFuncao
 
