@@ -8,75 +8,179 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <script src="script.js"></script>
-    <title>Home [WIP]</title>
+    <title>rodrigoacs</title>
 </head>
 
-<body>
-    <nav id="navStyle" class="navFlex">
-        <h1 class="navIcon">&nbsp;ACS&nbsp;</h1>
-    <span class="navFlexItemSpan"></span>
-        <a id="linkOne" class="navFlexItem navLink" href="#aboutMe">Sobre Mim</a>
-        <a id="linkTwo" class="navFlexItem navLink" href="#projects">Projetos</a>
-        <a id="linkThree" class="navFlexItem navLink" href="#contact">Contato</a>
-        <button type="checkbox" class="navFlexItem slider" onclick="toggleDark()">dark/light</button>
-    </nav>
+<body id="pageBody">
+    <header>
+        <button id="rgbOn" onclick="rgbOn()">rgb?</button>
+        <nav class="nav-bar">
+            <span class="acs">&lt;/ACS&gt;</span>
+            <a class="nav-button" href="#home">home</a>
+            <a class="nav-button" href="#about-me">sobre mim</a>
+            <a class="nav-button" href="#projects">projetos</a>
+            <a class="nav-button" href="#contact">contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="codeArea">
+                    <div class="codeMenu">
+                        <img src="./images/buttons.png" width="60px" alt="">
+                    </div>
+                    <div class="codeText">
+                        function home() { <br>
+                        &nbsp;&nbsp;console.log(<span class="highlight">'olá, meu nome é'</span>) <br>
+                        &nbsp;&nbsp;console.log(<span class="highlight">'Rodrigo'</span>) <br>
+                        &nbsp;&nbsp;console.log(<span class="highlight">'desenvolvedor web'</span>) <br>
+                        }
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-me">
+            <div class="container">
+                <div class="codeArea">
+                    <div class="codeMenu">
+                        <img src="./images/buttons.png" width="60px" alt="">
+                    </div>
+                    <div class="codeText">
+                        &lt;img&gt; <br>
+                        <img src="./images/blank-profile-picture-973460_1280.webp" alt="" width="250px" height="250px">
+                        <br>
+                        &lt;/img&gt;
+                    </div>
+                </div>
+                <div class="codeArea" style="width: 800px">
+                    <div class="codeMenu">
+                        <img src="./images/buttons.png" width="60px" alt="">
+                    </div>
+                    <div class="codeText">
+                        &lt;p&gt; <br>
+                        <span class="highlight">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est quia doloribus
+                            aperiam, delectus aliquam harum minima porro facilis sequi autem ipsum eum perferendis
+                            tempore error fugiat? Hic, tenetur iste?
+                        </span> <br>
+                        &lt;/p&gt;
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <div class="codeArea">
+                    <div class="codeMenu">
+                        <img src="./images/buttons.png" width="60px" alt="">
+                    </div>
+                    <div class="codeText">
+                        &lt;a&gt; <span class="highlight">em breve</span>
+                        <a href="#projects">
+                            <div class="project-container">
+                                <img class="image" src="./images/em_breve.png" alt="">
+                                <div class="description">
+                                    <div class="text">
+                                        <!--descrição aqui-->
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        &lt;/a&gt;
+                    </div>
+                </div>
+                <div class="codeArea">
+                    <div class="codeMenu">
+                        <img src="./images/buttons.png" width="60px" alt="">
+                    </div>
+                    <div class="codeText">
+                        &lt;a&gt; <span class="highlight">em breve</span>
+                        <a href="#projects">
+                            <div class="project-container">
+                                <img class="image" src="./images/em_breve.png" alt="">
+                                <div class="description">
+                                    <div class="text">
+                                        <!--descrição aqui-->
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        &lt;/a&gt;
+                    </div>
+                </div>
+                <div class="codeArea">
+                    <div class="codeMenu">
+                        <img src="./images/buttons.png" width="60px" alt="">
+                    </div>
+                    <div class="codeText">
+                        &lt;a&gt; <span class="highlight">em breve</span>
+                        <a href="#projects">
+                            <div class="project-container">
+                                <img class="image" src="./images/em_breve.png" alt="">
+                                <div class="description">
+                                    <div class="text">
+                                        <!--descrição aqui-->
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        &lt;/a&gt;
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="codeArea github">
+                <div class="codeMenu">
+                    <img src="./images/buttons.png" width="60px" alt="">
+                </div>
+                <div class="codeText">
+                    &lt;a href="github.com/rodrigoacs"><br>
+                    <span class="highlight">perfil no Github</span><br>
+                    &lt;/a&gt;
+                </div>
+            </div>
+            <div class="codeArea linkedin">
+                <div class="codeMenu">
+                    <img src="./images/buttons.png" width="60px" alt="">
+                </div>
+                <div class="codeText">
+                    &lt;a href="linkedin.com/in/rodrigoacs"><br>
+                    <span class="highlight">perfil no Linkedin</span><br>
+                    &lt;/a&gt;
+                </div>
+            </div>
+            <div class="codeArea telegram">
+                <div class="codeMenu">
+                    <img src="./images/buttons.png" width="60px" alt="">
+                </div>
+                <div class="codeText">
+                    &lt;a href="t.me/acsrodrigo"><br>
+                    <span class="highlight">perfil no Telegram</span><br>
+                    &lt;/a&gt;
+                </div>
+            </div>
+            <div class="codeArea email">
+                <div class="codeMenu">
+                    <img src="./images/buttons.png" width="60px" alt="">
+                </div>
+                <div class="codeText">
+                    <form action="https://formsubmit.co/rodrigohths@gmail.com" method="POST" class="form">
+                        <!-- <label for="name">Nome</label> -->
+                        <input placeholder="nome" type="text" name="name" id="name" required />
+                        <!-- <label for="email">E-mail</label> -->
+                        <input placeholder="email" type="email" name="email" id="email" required />
+                        <!-- <label for="message">Mensagem</label> -->
+                        <textarea placeholder="mensagem" name="message" id="message" required></textarea>
+                        <input type="hidden" name="_captcha" value="false" />
+                        <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html" /> -->
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-    <main id="mainElement">
-        <section id="aboutMe"><br>
-            <div id="sectionAboutMe" class="sectionStyle">
-                <h1 class="sectionTittle">Oi, meu nome é Rodrigo</h1>
-                <span class="aboutMeText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus,
-                    placeat iure alias pariatur unde beatae sunt! Eum sapiente excepturi atque asperiores provident vero
-                    earum iste? Mollitia asperiores quis cum aspernatur.</span>
-            </div>
-        </section>
-        <section id="projects"><br>
-            <div id="sectionProjects" class="sectionStyle">
-                <h1 class="sectionTittle">Projetos</h1>
-                <span class="projectsContainer">
-                    <a class="projectsLinks" href="./projects/calculator/index.html"><img
-                            src="./images/calculator_preview.png" class="projectPreview"><br>calculadora</a>
-                    <a class="projectsLinks" href="
-                    ./projects/site-arthur/index.html"><img src="./images/em_breve.png" class="projectPreview"><br>site
-                        Arthur</a>
-                    <a class="projectsLinks" href="
-                    #projects"><img src="./images/em_breve.png" class="projectPreview"><br>em breve</a>
-                    <a class="projectsLinks" href="
-                    #projects"><img src="./images/em_breve.png" class="projectPreview"><br>em breve</a>
-                    <a class="projectsLinks" href="
-                    #projects"><img src="./images/em_breve.png" class="projectPreview"><br>em breve</a>
-                    <a class="projectsLinks" href="
-                    #projects"><img src="./images/em_breve.png" class="projectPreview"><br>em breve</a>
-                </span>
-            </div>
-        </section>
-        <section id="contact"><br>
-            <div id="sectionContact" class="sectionStyle">
-                <h1 class="sectionTittle">entre em contato</h1>
-                <span class="contactContainer">
-                    <input class="contactInput" id="name" type="text" placeholder="nome">
-                    <input class="contactInput" id="email" type="email" placeholder="email">
-                    <textarea class="contactInputContent" id="text" name="text" placeholder="escreva algo"></textarea>
-                    <button class="contactInputSubmit" type="submit">enviar</button>
-                </span>
-            </div>
-        </section>
     </main>
-
-    <footer>
-        <div class="footer">
-            <div>Icons made by
-                <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
-                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-                <button onclick="scrollToTop()">voltar ao topo</button>
-                <a href="./relogio.html">relogio</a>
-                <a href="./cronometro.html">contador</a>
-                <a href="./email.html">email</a>
-                <a href="./projects/qrcodoFrontmentor.html">qrcode</a>
-            </div>
-        </div>
-    </footer>
 </body>
-
 
 </html>
