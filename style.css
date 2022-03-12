@@ -21,7 +21,7 @@
         font-size: 50%;
     }
 
-    
+
 }
 
 * {
@@ -38,8 +38,14 @@ html, body {
 }
 
 header {
+    z-index: 10;
     position: sticky;
     top: 0px;
+}
+
+.social-link, .social-link:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 #rgbOn {
@@ -94,6 +100,7 @@ header {
 .socialsGrid {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+
 }
 
 .telegram .codeText, .github .codeText, .linkedin .codeText {
@@ -105,17 +112,15 @@ header {
 .form textarea,
 .form button {
     display: block;
-    width: 100%;
+    width: 40rem;
+    margin: 1rem;
 }
 
 .form input,
 .form textarea {
     font: inherit;
     padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
     border-radius: 8px;
-    transition: border-color, box-shadow 0.2s;
 }
 
 .form textarea {
@@ -125,15 +130,24 @@ header {
 
 .form button {
     display: block;
+    text-align: center;
     padding: 1rem;
-    background: var(--color);
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color);
     font: inherit;
-    text-transform: uppercase;
-    border: none;
+    border: var(--color) solid 2px;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.2s;
+}
+
+.form button:hover {
+    transform: scale(1.05);
+    transition: .1s;
+}
+
+.form button:active {
+    transform: scale(1);
+    transition: .1s;
 }
 
 .project-container {
@@ -195,7 +209,7 @@ header {
 
 .codeText {
     padding: 10px;
-    line-height: 35px;
+    line-height: 2.5rem;
     font-size: 2rem;
     color: #444;
 }

@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
     <link rel="manifest" href="./images/favicon/site.webmanifest">
     <script src="script.js"></script>
+
     <title>Rodrigo</title>
 </head>
 
@@ -19,10 +20,10 @@
         <button id="rgbOn" onclick="rgbOn()">rgb?</button>
         <nav class="nav-bar">
             <span class="acs">&lt;/ACS&gt;</span>
-            <a class="nav-button" href="#home">home</a>
-            <a class="nav-button" href="#about-me">sobre mim</a>
-            <a class="nav-button" href="#projects">projetos</a>
-            <a class="nav-button" href="#contact">contato</a>
+            <a class="nav-button" href="#home">Home</a>
+            <a class="nav-button" href="#about-me">Sobre Mim</a>
+            <a class="nav-button" href="#projects">Projetos</a>
+            <a class="nav-button" href="#contact">Contato</a>
         </nav>
     </header>
     <main>
@@ -34,9 +35,9 @@
                     </div>
                     <div class="codeText">
                         function home() { <br>
-                        &nbsp;&nbsp;console.log(<span class="highlight">'olá, meu nome é'</span>) <br>
+                        &nbsp;&nbsp;console.log(<span class="highlight">'Olá, meu nome é'</span>) <br>
                         &nbsp;&nbsp;console.log(<span class="highlight">'Rodrigo'</span>) <br>
-                        &nbsp;&nbsp;console.log(<span class="highlight">'desenvolvedor web'</span>) <br>
+                        &nbsp;&nbsp;console.log(<span class="highlight">'Desenvolvedor Web'</span>) <br>
                         }
                     </div>
                 </div>
@@ -78,7 +79,7 @@
                         <img src="./images/buttons.png" width="60px" alt="">
                     </div>
                     <div class="codeText">
-                        &lt;a&gt; <span class="highlight">em breve</span>
+                        &lt;a&gt; <span class="highlight">Em Breve</span>
                         <a href="#projects">
                             <div class="project-container">
                                 <img class="image" src="./images/em_breve.png" alt="">
@@ -97,7 +98,7 @@
                         <img src="./images/buttons.png" width="60px" alt="">
                     </div>
                     <div class="codeText">
-                        &lt;a&gt; <span class="highlight">em breve</span>
+                        &lt;a&gt; <span class="highlight">Em Breve</span>
                         <a href="#projects">
                             <div class="project-container">
                                 <img class="image" src="./images/em_breve.png" alt="">
@@ -116,7 +117,7 @@
                         <img src="./images/buttons.png" width="60px" alt="">
                     </div>
                     <div class="codeText">
-                        &lt;a&gt; <span class="highlight">em breve</span>
+                        &lt;a&gt; <span class="highlight">Em Breve</span>
                         <a href="#projects">
                             <div class="project-container">
                                 <img class="image" src="./images/em_breve.png" alt="">
@@ -140,9 +141,11 @@
                             <img src="./images/buttons.png" width="60px" alt="">
                         </div>
                         <div class="codeText">
-                            &lt;a href="github.com/rodrigoacs"><br>
-                            <span class="highlight">perfil no Github</span><br>
-                            &lt;/a&gt;
+                            <a class="social-link" href="https://github.com/rodrigoacs">
+                                &lt;a href="github.com/rodrigoacs"><br>
+                                <span class="highlight">Perfil no Github</span><br>
+                                &lt;/a&gt;
+                            </a>
                         </div>
                     </div>
                     <div class="codeArea linkedin">
@@ -150,9 +153,11 @@
                             <img src="./images/buttons.png" width="60px" alt="">
                         </div>
                         <div class="codeText">
-                            &lt;a href="linkedin.com/in/rodrigoacs"><br>
-                            <span class="highlight">perfil no Linkedin</span><br>
-                            &lt;/a&gt;
+                            <a class="social-link" href="https://www.linkedin.com/in/rodrigoacs/">
+                                &lt;a href="linkedin.com/rodrigoacs"><br>
+                                <span class="highlight">Perfil no Linkedin</span><br>
+                                &lt;/a&gt;
+                            </a>
                         </div>
                     </div>
                     <div class="codeArea telegram">
@@ -160,9 +165,11 @@
                             <img src="./images/buttons.png" width="60px" alt="">
                         </div>
                         <div class="codeText">
-                            &lt;a href="t.me/acsrodrigo"><br>
-                            <span class="highlight">perfil no Telegram</span><br>
-                            &lt;/a&gt;
+                            <a class="social-link" href="https://t.me/acsrodrigo">
+                                &lt;a href="t.me/acsrodrigo"><br>
+                                <span class="highlight">Perfil no Telegram</span><br>
+                                &lt;/a&gt;
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -171,14 +178,16 @@
                         <img src="./images/buttons.png" width="60px" alt="">
                     </div>
                     <div class="codeText">
+                        &lt;form&gt;<span class="highlight"> Me mande um email </span>
                         <form action="https://formsubmit.co/rodrigohths@gmail.com" method="POST" class="form">
                             <input placeholder="nome" type="text" name="name" id="name" required />
                             <input placeholder="email" type="email" name="email" id="email" required />
                             <textarea placeholder="mensagem" name="message" id="message" required></textarea>
-                            <input type="hidden" name="_captcha" value="true" />
+                            <input type="hidden" name="_captcha" value="false" />
                             <input type="hidden" name="_next" value="https://rodrigoacs.github.io/#contact" />
-                            <button type="submit">Enviar</button>
+                            <button type="submit">ENVIAR</button>
                         </form>
+                        &lt;/form&gt;
                     </div>
                 </div>
             </div>
