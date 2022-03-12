@@ -9,4 +9,3 @@ function rgbOn() {
         if (hueValue == 360) hueValue = 0
     }, 5);
 }
-
