@@ -1,0 +1,307 @@
+{
+"2020":[
+ {
+  "2020": "Janeiro",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null
+ },
+ {
+  "2020": "Fevereiro",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null
+ },
+ {
+  "2020": "Março",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null
+ },
+ {
+  "2020": "Abril",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null
+ },
+ {
+  "2020": "Maio",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null
+ },
+ {
+  "2020": "Junho",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null
+ },
+ {
+  "2020": "Julho",
+  "Column2": 1,
+  "Column3": "Sapiens",
+  "Column4": null,
+  "Column5": null
+ },
+ {
+  "2020": "Agosto",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null
+ },
+ {
+  "2020": "Setembro",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null
+ },
+ {
+  "2020": "Outubro",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null
+ },
+ {
+  "2020": "Novembro",
+  "Column2": 3,
+  "Column3": "Homo Deus",
+  "Column4": "21 lições para o séc 21",
+  "Column5": "A v. ao m. em 80 dias"
+ },
+ {
+  "2020": "Dezembro",
+  "Column2": 3,
+  "Column3": "V. mil léguas sub.",
+  "Column4": "A Ilha Misteriosa",
+  "Column5": "Neuromancer"
+ },
+ {
+  "2020": "Total:",
+  "Column2": 7,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null
+ }
+],
+"2021":[
+ {
+  "2021": "Janeiro",
+  "Column2": 1,
+  "Column3": "Revival",
+  "Column4": null,
+  "Column5": null,
+  "Column6": null
+ },
+ {
+  "2021": "Fevereiro",
+  "Column2": 4,
+  "Column3": "Count Zero",
+  "Column4": "Monalisa Overdrive",
+  "Column5": "A Bússola de Ouro",
+  "Column6": "A Faca Sutil"
+ },
+ {
+  "2021": "Março",
+  "Column2": 4,
+  "Column3": "A Luneta Âmbar",
+  "Column4": "Capitães da Areia",
+  "Column5": "Fahrenheit 451",
+  "Column6": "Uma B. H. do Tempo"
+ },
+ {
+  "2021": "Abril",
+  "Column2": 4,
+  "Column3": "O Ceifador",
+  "Column4": "A Nuvem",
+  "Column5": "O Timbre",
+  "Column6": "O Fim da Infância"
+ },
+ {
+  "2021": "Maio",
+  "Column2": 3,
+  "Column3": "2001: Uma O. no E.",
+  "Column4": "Guerra sem fim",
+  "Column5": "Um C. para Leibowitz",
+  "Column6": null
+ },
+ {
+  "2021": "Junho",
+  "Column2": 2,
+  "Column3": "Um E. em Vermelho",
+  "Column4": "Fundação",
+  "Column5": null,
+  "Column6": null
+ },
+ {
+  "2021": "Julho",
+  "Column2": 3,
+  "Column3": "Fundação e Império",
+  "Column4": "Segunda Fundação",
+  "Column5": "Encontro com Rama",
+  "Column6": null
+ },
+ {
+  "2021": "Agosto",
+  "Column2": 1,
+  "Column3": "Periféricos",
+  "Column4": null,
+  "Column5": null,
+  "Column6": null
+ },
+ {
+  "2021": "Setembro",
+  "Column2": 2,
+  "Column3": "Sob a Redoma",
+  "Column4": "Duna",
+  "Column5": null,
+  "Column6": null
+ },
+ {
+  "2021": "Outubro",
+  "Column2": 2,
+  "Column3": "Messias de Duna",
+  "Column4": "Filhos de Duna",
+  "Column5": null,
+  "Column6": null
+ },
+ {
+  "2021": "Novembro",
+  "Column2": 3,
+  "Column3": "O C. dos Baskervilles",
+  "Column4": "Guerra do Velho",
+  "Column5": "As Brigadas Fantasma",
+  "Column6": null
+ },
+ {
+  "2021": "Dezembro",
+  "Column2": 3,
+  "Column3": "A Última Colônia",
+  "Column4": "A Guerra dos Mundos",
+  "Column5": "O Vale do Medo",
+  "Column6": null
+ },
+ {
+  "2021": "Total:",
+  "Column2": 32,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null,
+  "Column6": null
+ }
+],
+"2022":[
+ {
+  "2022": "Janeiro",
+  "Column2": 4,
+  "Column3": "Limites Da Fundação",
+  "Column4": "Fundação e Terra",
+  "Column5": "Encarcerados",
+  "Column6": "O Hobbit"
+ },
+ {
+  "2022": "Fevereiro",
+  "Column2": 3,
+  "Column3": 1984,
+  "Column4": "H.P. Lovecraft Vol. 1",
+  "Column5": "Prelúdio à Fundação",
+  "Column6": null
+ },
+ {
+  "2022": "Março",
+  "Column2": 3,
+  "Column3": "Origens da Fundação",
+  "Column4": "Anjos e Demônios",
+  "Column5": "Antropoceno",
+  "Column6": null
+ },
+ {
+  "2022": "Abril",
+  "Column2": 2,
+  "Column3": "Da Terra a Lua",
+  "Column4": "A Sociedade do Anel",
+  "Column5": null,
+  "Column6": null
+ },
+ {
+  "2022": "Maio",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null,
+  "Column6": null
+ },
+ {
+  "2022": "Junho",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null,
+  "Column6": null
+ },
+ {
+  "2022": "Julho",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null,
+  "Column6": null
+ },
+ {
+  "2022": "Agosto",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null,
+  "Column6": null
+ },
+ {
+  "2022": "Setembro",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null,
+  "Column6": null
+ },
+ {
+  "2022": "Outubro",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null,
+  "Column6": null
+ },
+ {
+  "2022": "Novembro",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null,
+  "Column6": null
+ },
+ {
+  "2022": "Dezembro",
+  "Column2": 0,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null,
+  "Column6": null
+ },
+ {
+  "2022": "Total:",
+  "Column2": 12,
+  "Column3": null,
+  "Column4": null,
+  "Column5": null,
+  "Column6": null
+ }
+]
+}
