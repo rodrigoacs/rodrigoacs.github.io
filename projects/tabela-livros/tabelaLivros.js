@@ -1,4 +1,4 @@
-fetch("https://rodrigoacs.github.io/projects/livros.json")
+fetch("https://rodrigoacs.github.io/projects/tabela-livros/livros.json")
     .then(response => response.json())
     .then(data => {
         Object.entries(data).forEach(([year, months]) => {
