@@ -10,14 +10,13 @@
 // ;LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-
 function show() {
     fetch("https://raw.githubusercontent.com/fserb/pt-br/master/dicio")
         .then(response => response.text())
         .then(dictionary => {
             const inputs = document.querySelectorAll("input")
             document.getElementById("result").innerHTML = '';
-            dictionary = dictionary.split("\n").filter(word => word.length == 5);
+            dictionary = dictionary.split("\n").filter(word => word.length == 5).map(removeAccent);
 
             for (let i = 0; i < inputs.length; i++) {
                 if (inputs[i].value) {
@@ -34,4 +33,17 @@ function show() {
 function info() {
     const info = document.getElementById("info");
     info.style.display = info.style.display == "none" ? "block" : "none";
+}
+
+function removeAccent(string) {
+    // by https://stackoverflow.com/users/1704264/luan-castro 
+    // in https://stackoverflow.com/questions/18236208
+    return string.replace(/[áàãâä]/gi, "a")
+        .replace(/[éèëê]/gi, "e")
+        .replace(/[íìïî]/gi, "i")
+        .replace(/[óòöôõ]/gi, "o")
+        .replace(/[úùüû]/gi, "u")
+        .replace(/[ç]/gi, "c")
+        .replace(/[ñ]/gi, "n")
+        .replace(/[^a-zA-Z0-9]/g, " ");
 }
