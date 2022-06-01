@@ -6,14 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <h1>Filmes Populares</h1>
     <div class="search-input">
-        <input type="search" name="movie-name" id="movie-name" placeholder="Digite o nome de um filme aqui">
-        <img src="images/search-icon.svg" alt="search icon">
+        <input type="text" name="movie-name" id="movie-name" placeholder="Digite o nome de um filme aqui">
+        <button><img src="images/search-icon.svg" alt="search icon"></button>
+
     </div>
 
     <div class="fav-only">
@@ -24,12 +28,9 @@
     <div class="movies">
         <div class="movie">
             <div class="movie-infos">
-                <div class="movie-poster">
-                    <img src="https://m.media-amazon.com/images/M/MV5BNjlhNmI2NjItNmJjYi00YzEwLWFjY2EtYmNhYmE3NGFkMTUzXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_.jpg"
-                        alt="movie poster">
-                </div>
+                <div class="movie-poster"></div>
                 <div class="movie-trf">
-                    <h2>Blade Runner 2049</h2>
+                    <span>Blade Runner 2049</span>
                     <div class="ratings">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -39,7 +40,7 @@
                         <span>10.0</span>
                     </div>
                     <div class="favorite">
-                        <img src="images/heart.svg" alt="Star Icon" />
+                        <button><img src="images/heart.svg" alt="Star Icon" /></button>
                         <span>Favoritar</span>
                     </div>
                 </div>
