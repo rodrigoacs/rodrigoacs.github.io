@@ -27,6 +27,7 @@ h1 {
 .movies {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .search-input {
@@ -65,6 +66,7 @@ button {
     border-radius: 1.5rem;
     width: 122.4rem;
     height: 20.1rem;
+    margin: 1rem;
 }
 
 .movie-poster {
