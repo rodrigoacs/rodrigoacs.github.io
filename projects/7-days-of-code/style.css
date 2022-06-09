@@ -67,10 +67,10 @@ button {
     width: 122.4rem;
     height: 20.1rem;
     margin: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 .movie-poster {
-    background-image: url(https://m.media-amazon.com/images/M/MV5BNjlhNmI2NjItNmJjYi00YzEwLWFjY2EtYmNhYmE3NGFkMTUzXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_.jpg);
     background-size: cover;
     width: 13.9rem;
     height: 13.9rem;

@@ -1,29 +1,4 @@
-const movies = [
-    {
-        image: 'https://img.elo7.com.br/product/original/3FBA809/big-poster-filme-batman-2022-90x60-cm-lo002-poster-batman.jpg',
-        title: 'Batman',
-        rating: 9.2,
-        year: 2022,
-        description: "Descrição do filme…",
-        isFavorited: true,
-    },
-    {
-        image: 'https://upload.wikimedia.org/wikipedia/pt/thumb/9/9b/Avengers_Endgame.jpg/250px-Avengers_Endgame.jpg',
-        title: 'Avengers',
-        rating: 9.2,
-        year: 2019,
-        description: "Descrição do filme…",
-        isFavorited: false
-    },
-    {
-        image: 'https://upload.wikimedia.org/wikipedia/en/1/17/Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg',
-        title: 'Doctor Strange',
-        rating: 9.2,
-        year: 2022,
-        description: "Descrição do filme…",
-        isFavorited: false
-    },
-]
+window.onload = getPopularMovies();
 
 function renderMovies(movieTBR) {
     const movie = document.createElement('div')
@@ -51,7 +26,7 @@ function renderMovies(movieTBR) {
     starIcon.style.width = `2.4rem`
     movieRating.appendChild(starIcon)
     movieRating.innerHTML += `<span> ${movieTBR.rating}</span>`
-    
+
     const movieFavorite = document.createElement('div')
     movieFavorite.classList.add('favorite')
     const favoriteButton = document.createElement('button')
@@ -76,4 +51,25 @@ function renderMovies(movieTBR) {
     movie.appendChild(movieDescription)
 
     document.querySelector('.movies').appendChild(movie)
+}
+
+async function getPopularMovies() {
+    const url = 'https://api.themoviedb.org/3/movie/popular?api_key=04c83eacb1a1a16fb8cfc98c293b0b6d&language=pt-BR&page=1'
+    const fetchResponse = await fetch(url).then(response => response.json())
+
+    let movies = []
+    movies = fetchResponse.results.map(movie => {
+        return {
+            image: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`,
+            title: movie.title,
+            rating: movie.vote_average,
+            year: movie.release_date.split('-')[0],
+            description: movie.overview,
+            isFavorited: false
+        }
+    })
+
+    movies.forEach(movie => {
+        renderMovies(movie);
+    });
 }
