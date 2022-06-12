@@ -60,7 +60,7 @@ function fixFormat(movies) {
             title: movie.title,
             rating: movie.vote_average,
             year: movie.release_date ? movie.release_date.split("-")[0] : "Não informado",
-            description: movie.overview,
+            description: movie.overview ? movie.overview : "Não informado",
             isFavorited: false
         }
     })
