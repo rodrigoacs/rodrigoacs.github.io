@@ -29,8 +29,8 @@ function renderMovies(movieTBR) {
 
     const movieFavorite = document.createElement("div")
     movieFavorite.classList.add("favorite")
-    const favoriteButton = document.createElement("button")
     const favoriteImage = document.createElement("img")
+    favoriteImage.classList.add("favorite-button")
     if (movieTBR.isFavorited) {
         favoriteImage.src = "./images/filled-heart-icon.png"
     } else {
@@ -39,8 +39,7 @@ function renderMovies(movieTBR) {
     favoriteImage.style.width = `2.4rem`
     const favoriteText = document.createElement("span")
     favoriteText.innerHTML = " Favoritar"
-    favoriteButton.appendChild(favoriteImage)
-    movieFavorite.appendChild(favoriteButton)
+    movieFavorite.appendChild(favoriteImage)
     movieFavorite.appendChild(favoriteText)
     movieTrf.appendChild(movieRating)
     movieTrf.appendChild(movieFavorite)
@@ -53,23 +52,59 @@ function renderMovies(movieTBR) {
     document.querySelector(".movies").appendChild(movie)
 }
 
-async function getPopularMovies() {
-    const url = "https://api.themoviedb.org/3/movie/popular?api_key=04c83eacb1a1a16fb8cfc98c293b0b6d&language=pt-BR&page=1"
-    const fetchResponse = await fetch(url).then(response => response.json())
-
-    let movies = []
-    movies = fetchResponse.results.map(movie => {
+function fixFormat(movies) {
+    let moviesFixed = [];
+    moviesFixed = movies.map(movie => {
         return {
             image: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`,
             title: movie.title,
             rating: movie.vote_average,
-            year: movie.release_date.split("-")[0],
+            year: movie.release_date ? movie.release_date.split("-")[0] : "Não informado",
             description: movie.overview,
             isFavorited: false
         }
     })
+    return moviesFixed;
+}
+
+async function getPopularMovies() {
+    const url = "https://api.themoviedb.org/3/movie/popular?api_key=04c83eacb1a1a16fb8cfc98c293b0b6d&language=pt-BR"
+    const fetchResponse = await fetch(url).then(response => response.json())
+
+    let movies = fixFormat(fetchResponse.results)
 
     movies.forEach(movie => {
         renderMovies(movie);
     });
+    favoriteButton()
+}
+
+function favoriteButton() {
+    document.querySelectorAll(".favorite-button").forEach(button => {
+        button.addEventListener("click", () => {
+            button.src = button.src.includes("empty") ? "./images/filled-heart-icon.png" : "./images/empty-heart-icon.svg"
+            console.log(button.parentNode.parentNode.firstChild.innerHTML);
+        });
+    })
+}
+
+document.getElementById("search-input").addEventListener("keyup", (e) => {
+    if (e.keyCode === 13) {
+        searchMovie();
+    }
+})
+
+async function searchMovie() {
+    const url = "https://api.themoviedb.org/3/search/movie?api_key=04c83eacb1a1a16fb8cfc98c293b0b6d&language=pt-BR&query=";
+    const search = document.getElementById("search-input").value;
+    const urlSearch = url + search;
+
+    document.querySelector(".movies").innerHTML = "";
+
+    const fetchResponse = await fetch(urlSearch).then(response => response.json())
+    let movies = fixFormat(fetchResponse.results)
+    movies.forEach(movie => {
+        renderMovies(movie);
+    });
+    favoriteButton()
 }

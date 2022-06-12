@@ -7,10 +7,20 @@
         font-size: 56.25%;
     }
 
+    .movie-poster {
+        min-width: 125px;
+        min-height: 125px;
+    }
+
     .movie {
         flex-wrap: nowrap;
         flex-direction: column;
         height: fit-content !important;
+        max-width: 330px;
+    }
+
+    .movie-infos, .movie-description, .search-input {
+        width: 300px !important;
     }
 }
 
