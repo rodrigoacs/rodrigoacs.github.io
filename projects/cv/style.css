@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: #f7f1ff;
+    font-size: 1.6rem;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 2.6rem;
+}
+
+body {
+    background-color: #181818;
+    padding: 0rem 10vw;
+    text-align: justify;
+}
+
+div {
+    padding-top: 2rem;
+}
+
+.header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.2rem;
+    padding-bottom: 0.8rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
