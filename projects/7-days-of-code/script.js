@@ -79,11 +79,18 @@ async function getPopularMovies() {
     favoriteButton()
 }
 
+let favoriteKey = 0;
+
 function favoriteButton() {
     document.querySelectorAll(".favorite-button").forEach(button => {
         button.addEventListener("click", () => {
+            const filmTittle = button.parentNode.parentNode.firstChild.innerHTML;
             button.src = button.src.includes("empty") ? "./images/filled-heart-icon.png" : "./images/empty-heart-icon.svg"
-            console.log(button.parentNode.parentNode.firstChild.innerHTML);
+            if (button.src.includes("empty")) {
+                localStorage.removeItem(`${filmTittle}`)
+            }
+            favoriteKey = favoriteKey++;
+            localStorage.setItem(favoriteKey, `${filmTittle}`)
         });
     })
 }
@@ -97,7 +104,10 @@ document.getElementById("search-input").addEventListener("keyup", (e) => {
 async function searchMovie() {
     const url = "https://api.themoviedb.org/3/search/movie?api_key=04c83eacb1a1a16fb8cfc98c293b0b6d&language=pt-BR&query=";
     const search = document.getElementById("search-input").value;
-    const urlSearch = url + search;
+    let urlSearch = url + search;
+    if (!search) {
+        urlSearch = "https://api.themoviedb.org/3/movie/popular?api_key=04c83eacb1a1a16fb8cfc98c293b0b6d&language=pt-BR";
+    }
 
     document.querySelector(".movies").innerHTML = "";
 

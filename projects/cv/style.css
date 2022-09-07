@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     font-size: 62.5%;
@@ -10,7 +10,7 @@
     border: 0;
     color: #f7f1ff;
     font-size: 1.6rem;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Inter", monospace;
     line-height: 2.6rem;
 }
 
