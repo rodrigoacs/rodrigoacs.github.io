@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --color-bg: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    --color-bg: linear-gradient(to top, #111111, #333333);
 }
 
 * {
@@ -21,7 +21,7 @@ html {
     height: auto;
     font-size: 16px;
     color: #f7f1ff;
-    background-image: url(https://images.unsplash.com/photo-1573455494057-12684d151bf4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1562&q=80);
+    background-image: var(--color-bg);
 
 }
 
@@ -32,7 +32,7 @@ p {
     text-align: justify;
     backdrop-filter: blur(16px) saturate(200%);
     -webkit-backdrop-filter: blur(16px) saturate(200%);
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 0.5rem;
 }
 
@@ -54,9 +54,13 @@ h1 {
     font-size: 1.4em;
     font-weight: 900;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.75);
     border-radius: 1rem;
     margin: 1rem;
+}
+
+.capitular {
+    font-weight: 600;
 }
 
 .nav-buttons:hover {
@@ -73,13 +77,13 @@ h1 {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    background-color: rgba(19, 19, 19, 0.6);
+    background-color: rgba(19, 19, 19, 0.80);
 }
 
-/* .highlight {
-    background-color: #FFE53B;
-    background-image: var(--color-bg);
-} */
+.highlight {
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
+}
 
 @media (max-width: 768px) {
 
