@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root {
+    --color-bg: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,12 +11,34 @@
     font-family: 'Inter', monospace;
 }
 
-body, html {
+body {
+    min-height: 100vh;
+    backdrop-filter: blur(48px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+html {
+    height: auto;
     font-size: 16px;
     color: #f7f1ff;
-    background-image: url(https://images.unsplash.com/photo-1556534397-927835f4e7bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80);
-    background-position: center top;
-    /* background-image: linear-gradient(to right, #000000 0%, #450047 100%); */
+    background-image: url(https://images.unsplash.com/photo-1573455494057-12684d151bf4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1562&q=80);
+
+}
+
+p {
+    font-size: 1.4em;
+    margin: 2em;
+    padding: 2em;
+    text-align: justify;
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 0.5rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
 }
 
 .logo-mobile {
@@ -24,9 +50,9 @@ body, html {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 50px;
-    font-size: 1.6em;
-    font-weight: 700;
+    height: 20px;
+    font-size: 1.4em;
+    font-weight: 900;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
     border-radius: 1rem;
@@ -34,31 +60,12 @@ body, html {
 }
 
 .nav-buttons:hover {
-    background-color: rgba(0, 0, 0, 0.5);
     transform: scale(1.05);
     transition: all 0.2s;
 }
 
-p {
-    font-size: 1.6em;
-    margin: 2em;
-    padding: 2em;
-    text-align: justify;
-    text-justify: inter-ideograph;
-    backdrop-filter: blur(16px) saturate(200%);
-    -webkit-backdrop-filter: blur(16px) saturate(200%);
-    background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-}
-
-h1 {
-    text-align: center;
-    margin: 2rem;
-}
 
 .ativado {
-    background-color: rgba(0, 0, 0, 0.75);
     color: rgba(255, 255, 255, 1);
 }
 
@@ -66,7 +73,13 @@ h1 {
     display: flex;
     flex-direction: row;
     width: 100vw;
+    background-color: rgba(19, 19, 19, 0.6);
 }
+
+/* .highlight {
+    background-color: #FFE53B;
+    background-image: var(--color-bg);
+} */
 
 @media (max-width: 768px) {
 
