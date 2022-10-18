@@ -1,0 +1,73 @@
+﻿Data;Livro;Autor;Gênero;nota;Favorito
+01/07/2020;Sapiens;Yuval Noah Harari;História;8;não
+10/11/2020;Homodeus;Yuval Noah Harari;História;10;sim
+21/11/2020;21 lições para o século 21;Yuval Noah Harari;História;10;não
+24/11/2020;A volta ao mundo em 80 dias;Júlio Verne;Ação e Aventura;10;não
+04/12/2020;Vinte mil léguas submarinas;Júlio Verne;Ficção Científica;8;não
+13/12/2020;A Ilha Misteriosa;Júlio Verne;Ação e Aventura;10;sim
+23/12/2020;Neuromancer;William Gibson;Ficção Científica;10;sim
+04/01/2021;Revival;Stephen King;Terror/Thriller;10;sim
+01/02/2021;Count Zero;William Gibson;Ficção Científica;8;não
+09/02/2021;Mona Lisa Overdrive;William Gibson;Ficção Científica;8;não
+17/02/2021;A Bússola de Ouro;Philip Pullman;Fantasia;10;sim
+28/02/2021;A Faca Sutil;Philip Pullman;Fantasia;10;sim
+09/03/2021;A Luneta Âmbar;Philip Pullman;Fantasia;10;sim
+17/03/2021;Capitães da Areia;Jorge Amado;Ficção Contemporânea;4;não
+22/03/2021;Fahrenheit 451;Ray Bradbury;Distopia;8;não
+31/03/2021;Uma Breve História do Tempo;Stephen Hawking;Tecnologia e Ciência;10;não
+04/04/2021;O Ceifador;Neal Shusterman;Distopia, Ficção Científica;10;sim
+07/04/2021;A Nuvem;Neal Shusterman;Distopia, Ficção Científica;10;sim
+19/04/2021;O Timbre;Neal Shusterman;Distopia, Ficção Científica;10;sim
+25/04/2021;O Fim da Infância;Arthur C. Clarke;Ficção Científica;10;não
+05/05/2021;2001: Uma Odisseia no Espaço;Arthur C. Clarke;Ficção Científica;8;não
+12/05/2021;Guerra sem fim;Joe Haldeman;Ficção Científica;9;não
+30/05/2021;Um Cântico para Leibowitz;Walter M. Miller Jr;Distopia, Ficção Científica;8;não
+06/06/2021;Um Estudo em Vermelho;Arthur Conan Doyle;Mistério;6;não
+20/06/2021;Fundação;Isaac Asimov;Ficção Científica;10;sim
+03/07/2021;Fundação e Império;Isaac Asimov;Ficção Científica;9;não
+17/07/2021;Segunda Fundação;Isaac Asimov;Ficção Científica;10;sim
+27/07/2021;Encontro com Rama;Arthur C. Clarke;Ficção Científica;8;não
+24/08/2021;Periféricos;William Gibson;Ficção Científica;9;não
+05/09/2021;Sob a Redoma;Stephen King;Ficção Científica;10;sim
+24/09/2021;Duna;Frank Herbert;Ficção Científica;10;sim
+03/10/2021;Messias de Duna;Frank Herbert;Ficção Científica;10;não
+24/10/2021;Filhos de Duna;Frank Herbert;Ficção Científica;10;não
+03/11/2021;O Cão dos Baskervilles;Arthur Conan Doyle;Mistério;8;não
+24/11/2021;Guerra do Velho;John Scalzi;Ficção Científica;10;não
+27/11/2021;As Brigadas Fantasma;John Scalzi;Ficção Científica;10;não
+05/12/2021;A Última Colônia;John Scalzi;Ficção Científica;10;sim
+20/12/2021;A Guerra dos Mundos;H. G. Wells;Ficção Científica;8;não
+26/12/2021;O Vale do Medo;Arthur Conan Doyle;Mistério;9;não
+03/01/2022;Limites da Fundação;Isaac Asimov;Ficção Científica;10;sim
+11/01/2022;Fundação e Terra;Isaac Asimov;Ficção Científica;9;sim
+17/01/2022;Encarcerados;John Scalzi;Ficção Científica;8;não
+25/01/2022;O Hobbit;J. R. R. Tolkien;Fantasia;10;sim
+02/02/2022;1984;George Orwell;Distopia;8;não
+16/02/2022;H.P. Lovecraft - Medo Clássico Vol. 1;H.P. Lovecraft;Terror/Thriller;7;não
+22/02/2022;Prelúdio à Fundação;Isaac Asimov;Ficção Científica;10;sim
+03/03/2022;Origens da Fundação;Isaac Asimov;Ficção Científica;10;sim
+14/03/2022;Anjos e Demônios;Dan Brown;Mistério;7;não
+24/03/2022;Antropoceno;John Green;Ensaios;9;sim
+01/04/2022;Da Terra à Lua;Júlio Verne;Ficção Científica;7;não
+09/04/2022;A Sociedade do Anel;J. R. R. Tolkien;Fantasia;10;sim
+17/04/2022;As Duas Torres;J. R. R. Tolkien;Fantasia;10;sim
+25/04/2022;O Retorno do Rei;J. R. R. Tolkien;Fantasia;10;sim
+30/04/2022;Forward;Amor Towles, Andy Weir, Blake Crouch, N. K. Jemisin, Paul Tremblay, Veronica Roth;Ficção Científica;8;não
+03/05/2022;Sobre a brevidade da vida;Sêneca;Filosofia;7;não
+07/06/2022;Walden;H. D. Thoreau;Autobiografia;7;não
+09/06/2022;A Valsa Eterna;Evezel;Fantasia;6;não
+19/06/2022;O Conto da Aia;Margaret Atwood;Distopia;10;não
+03/07/2022;As Fontes do Paraiso;Arthur C. Clarke;Ficção Científica;10;não
+10/07/2022;Blade Runner;Philip K. Dick;Ficção Científica;8;não
+15/07/2022;Eu, Robô;Isaac Asimov;Ficção Científica;9;não
+17/07/2022;As Cavernas de Aço;Isaac Asimov;Ficção Científica;10;sim
+18/07/2022;O Sol Desvelado;Isaac Asimov;Ficção Científica;10;sim
+20/07/2022;Misery;Stephen King;Terror/Thriller;8;não
+23/07/2022;Tropas Estelares;Robert Heinlein;Ficção Científica;7;não
+30/07/2022;O Fim da Eternidade;Isaac Asimov;Ficção Científica;8;não
+09/08/2022;O Enigma de Andrômeda;Michael Crichton;Ficção Científica;7;não
+18/09/2022;O Silmarillion;J. R. R. Tolkien;Fantasia;10;sim
+24/09/2022;Intruso;Iain Reid;Ficção Científica;7;não
+04/10/2022;Pessoas Normais;Sally Rooney;Romance;10;sim
+09/10/2022;Anatomia do Estado;Murray Rothbard;Política;8;não
+16/10/2022;Os Testamentos;Margaret Atwood;Distopia;10;sim

@@ -1,42 +1,52 @@
-
-// 0 liro, 1 autor, 2 data, 3 genero, 4 nota;
-function logBook(book) {
-    book = book.split(";");
-    console.log(`nome do livro: ${book[0]}`);
-    console.log(`nome do autor: ${book[1]}`);
-    console.log(`data da leitura: ${book[2]}`);
-    console.log(`genero: ${book[3]}`);
-    console.log(`nota: ${book[4]}`);
+// 0 data, 1 livro, 2 autor, 3 genero, 4 nota, 5 favorito;
+function createTable(bookInfos) {
+    bookInfos = bookInfos.split(";");
     let tr = document.createElement("tr");
     let td = document.createElement("td");
 
-    td.innerHTML = book[0];
+    td.innerHTML = bookInfos[0];
     tr.appendChild(td);
     td = document.createElement("td");
-    td.innerHTML = book[1];
+    td.innerHTML = bookInfos[1];
     tr.appendChild(td);
     td = document.createElement("td");
-    td.innerHTML = book[2];
+    td.innerHTML = bookInfos[2];
+    td.id = bookInfos[2];
     tr.appendChild(td);
     td = document.createElement("td");
-    td.innerHTML = book[3];
+    td.innerHTML = bookInfos[3];
     tr.appendChild(td);
     td = document.createElement("td");
-    td.innerHTML = book[4];
+    td.innerHTML = bookInfos[4];
+    tr.appendChild(td);
+    td.innerHTML = bookInfos[5];
     tr.appendChild(td);
     document.getElementById("table").appendChild(tr);
 
 
 }
 
-fetch("./Biblioteca-4780343c6bfa45e2bb9299516cf05e3c.csv")
+fetch("./Biblioteca-4780343c6bfa45e2bb9299516cf05e3c-2.csv")
     .then(response => response.text())
     .then(csv => csv.split(/\n/))
-    // .then(lines => {
-    //     lines.forEach(line => {
-    //         let lineElement = document.createElement("div");
-    //         lineElement.innerText = line;
-    //         document.body.append(lineElement);
-    //     })
-    // })
-    .then(books => books.forEach(logBook))
+    .then(books => books.forEach(createTable))
+
+let query = document.getElementById("query");
+query.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("search").click();
+    }
+});
+
+document.querySelector("#search").addEventListener("click", searchAuthor);
+
+function searchAuthor() {
+    document.querySelectorAll(`tr`).forEach(element => {
+        if (element.children[2].id.toLowerCase() != query.value.toLowerCase()) {
+            element.style.display = "none";
+        } else {
+            element.style.display = "table-row";
+        }
+    });
+}
