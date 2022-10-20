@@ -1,10 +1,9 @@
-// secret_NaeumXdjIFYfN70pVSiVhMrRjyyXPlIyi65RcrSGKqL
-// 4780343c6bfa45e2bb9299516cf05e3c
+
 
 // import { Client } from "@notionhq/client";
 
-// const notionToken = "secret_NaeumXdjIFYfN70pVSiVhMrRjyyXPlIyi65RcrSGKqL";
-// const databaseId = "4780343c6bfa45e2bb9299516cf05e3c";
+// const notionToken = "";
+// const databaseId = "";
 
 // const notion = new Client({ auth: notionToken });
 
