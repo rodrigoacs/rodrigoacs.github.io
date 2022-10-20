@@ -4,7 +4,8 @@
   "description": "",
   "type": "module",
   "dependencies": {
-    "@notionhq/client": "^1.0.1"
+    "@notionhq/client": "^1.0.1",
+    "dotenv": "^16.0.3"
   },
   "main": "tabelaLivros.js",
   "scripts": {

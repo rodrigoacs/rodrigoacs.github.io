@@ -1,17 +1,48 @@
-// secret_NaeumXdjIFYfN70pVSiVhMrRjyyXPlIyi65RcrSGKqL
-// 4780343c6bfa45e2bb9299516cf05e3c
+// import { Client } from "./node_modules/@notionhq/client/build/src/index.js";
+// import * as dotenv from './node_modules/dotenv/lib/main.js';
+// dotenv.config();
 
-// import { Client } from "@notionhq/client";
-
-// const notionToken = "secret_NaeumXdjIFYfN70pVSiVhMrRjyyXPlIyi65RcrSGKqL";
+// const notionToken = process.env.NOTION_TOKEN;
 // const databaseId = "4780343c6bfa45e2bb9299516cf05e3c";
 
 // const notion = new Client({ auth: notionToken });
+
+// function makeTable(page) {
+//     let tr = document.createElement("tr");
+//     let tdData = document.createElement("td");
+//     let tdLivro = document.createElement("td");
+//     let tdAutor = document.createElement("td");
+//     let tdGenero = document.createElement("td");
+//     let tdNota = document.createElement("td");
+//     let tdFavorito = document.createElement("td");
+
+//     tdData.innerHTML = page.properties["Data"].date.start;
+//     tdLivro.innerHTML = page.properties["Livro"].title[0].plain_text;
+//     tdAutor.innerHTML = page.properties["Autor"]["multi_select"][0].name;
+//     tdGenero.innerHTML = page.properties["Gênero"]["multi_select"][0].name;
+//     tdNota.innerHTML = page.properties["Nota"].number;
+//     tdFavorito.innerHTML = page.properties["Favorito"]["select"].name;
+
+//     tr.appendChild(tdData);
+//     tr.appendChild(tdLivro);
+//     tr.appendChild(tdAutor);
+//     tr.appendChild(tdGenero);
+//     tr.appendChild(tdNota);
+//     tr.appendChild(tdFavorito);
+
+//     document.getElementById("table").appendChild(tr);
+// }
 
 // async function queryTable() {
 //     try {
 //         const response = await notion.databases.query({
 //             database_id: databaseId,
+//             sorts: [
+//                 {
+//                     property: "Data",
+//                     direction: "descending",
+//                 },
+//             ],
 //         });
 
 //         const pages = response.results;
