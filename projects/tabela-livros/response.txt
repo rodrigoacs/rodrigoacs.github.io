@@ -1,0 +1,504 @@
+2022-10-16
+Os Testamentos
+Margaret Atwood
+Distopia
+10
+sim
+
+2022-10-09
+Anatomia do Estado
+Murray Rothbard
+Política
+8
+não
+
+2022-10-04
+Pessoas Normais
+Sally Rooney
+Romance
+10
+sim
+
+2022-09-24
+Intruso
+Iain Reid
+Ficção Científica
+7
+não
+
+2022-09-18
+O Silmarillion
+J. R. R. Tolkien
+Fantasia
+10
+sim
+
+2022-08-09
+O Enigma de Andrômeda
+Michael Crichton
+Ficção Científica
+7
+não
+
+2022-07-30
+O Fim da Eternidade
+Isaac Asimov
+Ficção Científica
+8
+não
+
+2022-07-23
+Tropas Estelares
+Robert Heinlein
+Ficção Científica
+7
+não
+
+2022-07-20
+Misery
+Stephen King
+Terror/Thriller
+8
+não
+
+2022-07-18
+O Sol Desvelado
+Isaac Asimov
+Ficção Científica
+10
+sim
+
+2022-07-17
+As Cavernas de Aço
+Isaac Asimov
+Ficção Científica
+10
+sim
+
+2022-07-15
+Eu, Robô
+Isaac Asimov
+Ficção Científica
+9
+não
+
+2022-07-10
+Blade Runner
+Philip K. Dick
+Ficção Científica
+8
+não
+
+2021-03-17
+Capitães da Areia
+Jorge Amado
+Ficção Contemporânea
+4
+não
+
+2021-09-05
+Sob a Redoma
+Stephen King
+Ficção Científica
+10
+sim
+
+2021-05-12
+Guerra sem fim
+Joe Haldeman
+Ficção Científica
+9
+não
+
+2020-07-01
+Sapiens
+Yuval Noah Harari
+História
+8
+não
+
+2021-02-28
+A Faca Sutil
+Philip Pullman
+Fantasia
+10
+sim
+
+2022-01-03
+Limites da Fundação
+Isaac Asimov
+Ficção Científica
+10
+sim
+
+2021-07-17
+Segunda Fundação
+Isaac Asimov
+Ficção Científica
+10
+sim
+
+2021-06-20
+Fundação
+Isaac Asimov
+Ficção Científica
+10
+sim
+
+2021-12-26
+O Vale do Medo
+Arthur Conan Doyle
+Mistério
+9
+não
+
+2021-05-05
+2001: Uma Odisseia no Espaço
+Arthur C. Clarke
+Ficção Científica
+8
+não
+
+2021-08-24
+Periféricos
+William Gibson
+Ficção Científica
+9
+não
+
+2022-04-25
+O Retorno do Rei
+J. R. R. Tolkien
+Fantasia
+10
+sim
+
+2021-04-25
+O Fim da Infância
+Arthur C. Clarke
+Ficção Científica
+10
+não
+
+2021-02-17
+A Bússola de Ouro
+Philip Pullman
+Fantasia
+10
+sim
+
+2021-04-04
+O Ceifador
+Neal Shusterman
+Distopia
+10
+sim
+
+2021-12-05
+A Última Colônia
+John Scalzi
+Ficção Científica
+10
+sim
+
+2022-06-09
+A Valsa Eterna
+Evezel
+Fantasia
+6
+não
+
+2021-02-09
+Mona Lisa Overdrive
+William Gibson
+Ficção Científica
+8
+não
+
+2021-06-06
+Um Estudo em Vermelho
+Arthur Conan Doyle
+Mistério
+6
+não
+
+2021-03-31
+Uma Breve História do Tempo
+Stephen Hawking
+Tecnologia e Ciência
+10
+não
+
+2022-02-02
+1984
+George Orwell
+Distopia
+8
+não
+
+2022-02-22
+Prelúdio à Fundação
+Isaac Asimov
+Ficção Científica
+10
+sim
+
+2022-02-16
+H.P. Lovecraft - Medo Clássico Vol. 1
+H.P. Lovecraft
+Terror/Thriller
+7
+não
+
+2022-04-01
+Da Terra à Lua
+Júlio Verne
+Ficção Científica
+7
+não
+
+2022-07-03
+As Fontes do Paraiso
+Arthur C. Clarke
+Ficção Científica
+10
+não
+
+2022-05-03
+Sobre a brevidade da vida
+Sêneca
+Filosofia
+7
+não
+
+2022-03-14
+Anjos e Demônios
+Dan Brown
+Mistério
+7
+não
+
+2021-05-30
+Um Cântico para Leibowitz
+Walter M. Miller Jr
+Distopia
+8
+não
+
+2021-10-24
+Filhos de Duna
+Frank Herbert
+Ficção Científica
+10
+não
+
+2022-04-17
+As Duas Torres
+J. R. R. Tolkien
+Fantasia
+10
+sim
+
+2021-10-03
+Messias de Duna
+Frank Herbert
+Ficção Científica
+10
+não
+
+2022-06-07
+Walden
+H. D. Thoreau
+Autobiografia
+7
+não
+
+2021-07-03
+Fundação e Império
+Isaac Asimov
+Ficção Científica
+9
+não
+
+2021-07-27
+Encontro com Rama
+Arthur C. Clarke
+Ficção Científica
+8
+não
+
+2022-04-09
+A Sociedade do Anel
+J. R. R. Tolkien
+Fantasia
+10
+sim
+
+2021-04-19
+O Timbre
+Neal Shusterman
+Distopia
+10
+sim
+
+2020-11-10
+Homodeus
+Yuval Noah Harari
+História
+10
+sim
+
+2022-01-25
+O Hobbit
+J. R. R. Tolkien
+Fantasia
+10
+sim
+
+2021-12-20
+A Guerra dos Mundos
+H. G. Wells
+Ficção Científica
+8
+não
+
+2022-01-17
+Encarcerados
+John Scalzi
+Ficção Científica
+8
+não
+
+2022-04-30
+Forward
+Blake Crouch
+Ficção Científica
+8
+não
+
+2021-01-04
+Revival
+Stephen King
+Terror/Thriller
+10
+sim
+
+2021-03-09
+A Luneta Âmbar
+Philip Pullman
+Fantasia
+10
+sim
+
+2021-02-01
+Count Zero
+William Gibson
+Ficção Científica
+8
+não
+
+2020-12-13
+A Ilha Misteriosa
+Júlio Verne
+Ação e Aventura
+10
+sim
+
+2020-11-21
+21 lições para o século 21
+Yuval Noah Harari
+História
+10
+não
+
+2022-06-19
+O Conto da Aia
+Margaret Atwood
+Distopia
+10
+não
+
+2020-11-24
+A volta ao mundo em 80 dias
+Júlio Verne
+Ação e Aventura
+10
+não
+
+2021-04-07
+A Nuvem
+Neal Shusterman
+Distopia
+10
+sim
+
+2022-01-11
+Fundação e Terra
+Isaac Asimov
+Ficção Científica
+9
+sim
+
+2020-12-23
+Neuromancer
+William Gibson
+Ficção Científica
+10
+sim
+
+2021-03-22
+Fahrenheit 451
+Ray Bradbury
+Distopia
+8
+não
+
+2020-12-04
+Vinte mil léguas submarinas
+Júlio Verne
+Ficção Científica
+8
+não
+
+2022-03-03
+Origens da Fundação
+Isaac Asimov
+Ficção Científica
+10
+sim
+
+2021-11-27
+As Brigadas Fantasma
+John Scalzi
+Ficção Científica
+10
+não
+
+2021-09-24
+Duna
+Frank Herbert
+Ficção Científica
+10
+sim
+
+2022-03-24
+Antropoceno
+John Green
+Ensaios
+9
+sim
+
+2021-11-24
+Guerra do Velho
+John Scalzi
+Ficção Científica
+10
+não
+
+2021-11-03
+O Cão dos Baskervilles
+Arthur Conan Doyle
+Mistério
+8
+não
+

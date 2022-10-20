@@ -1,0 +1,15 @@
+{
+  "name": "tabela-livros",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@notionhq/client": "^1.0.1"
+  },
+  "main": "tabelaLivros.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
