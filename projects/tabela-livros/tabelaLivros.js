@@ -1,5 +1,5 @@
-import { Client } from "@notionhq/client";
-import * as dotenv from "dotenv";
+const { Client } = require('@notionhq/client');
+require('dotenv').config()
 dotenv.config();
 
 const notionToken = process.env.NOTION_TOKEN;
