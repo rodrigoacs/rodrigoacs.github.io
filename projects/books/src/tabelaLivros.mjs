@@ -1,11 +1,38 @@
-import { Client } from "@notionhq/client";
+import axios from 'axios';
 import * as dotenv from 'dotenv';
 dotenv.config();
 
 const notionToken = process.env.NOTION_TOKEN;
 const databaseId = "4780343c6bfa45e2bb9299516cf05e3c";
 
-const notion = new Client({ auth: notionToken });
+const options = {
+    method: 'POST',
+    url: `https://api.notion.com/v1/databases/${databaseId}/query`,
+    headers: {
+        accept: 'application/json',
+        'Notion-Version': '2022-06-28',
+        'content-type': 'application/json',
+        'Authorization': `${notionToken}`
+    },
+    data: { page_size: 100 }
+};
+
+axios
+    .request(options)
+    .then((response) => {
+        response.data.results.forEach(page => {
+            console.log(page.properties["Data"].date.start);
+            console.log(page.properties["Livro"].title[0].plain_text);
+            console.log(page.properties["Autor"]["multi_select"][0].name);
+            console.log(page.properties["Gênero"]["multi_select"][0].name);
+            console.log(page.properties["Nota"].number);
+            console.log(page.properties["Favorito"]["select"].name)
+            console.log();
+        })
+    })
+    .catch(function (error) {
+        console.error(error);
+    });
 
 function makeTable(page) {
     let tr = document.createElement("tr");
@@ -32,37 +59,6 @@ function makeTable(page) {
 
     document.getElementById("table").appendChild(tr);
 }
-
-async function queryTable() {
-    try {
-        const response = await notion.databases.query({
-            database_id: databaseId,
-            sorts: [
-                {
-                    property: "Data",
-                    direction: "descending",
-                },
-            ],
-        });
-
-        const pages = response.results;
-        pages.forEach((page) => {
-            console.log("f");
-            makeTable(page);
-            // console.log(page.properties["Data"].date.start);
-            // console.log(page.properties["Livro"].title[0].plain_text);
-            // console.log(page.properties["Autor"]["multi_select"][0].name);
-            // console.log(page.properties["Gênero"]["multi_select"][0].name);
-            // console.log(page.properties["Nota"].number);
-            // console.log(page.properties["Favorito"]["select"].name)
-        });
-
-    } catch (error) {
-        console.error(error.body)
-    }
-}
-queryTable();
-
 
 // // 0 data, 1 livro, 2 autor, 3 genero, 4 nota, 5 favorito;
 // function createTable(bookInfos) {
