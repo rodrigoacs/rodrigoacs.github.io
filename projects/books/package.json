@@ -2,7 +2,7 @@
   "name": "books",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/tabelaLivros.js",
   "scripts": {
     "start": "webpack"
   },
