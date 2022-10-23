@@ -32,33 +32,7 @@ axios
     })
     .catch(function (error) {
         console.error(error);
-    });
-
-function makeTable(page) {
-    let tr = document.createElement("tr");
-    let tdData = document.createElement("td");
-    let tdLivro = document.createElement("td");
-    let tdAutor = document.createElement("td");
-    let tdGenero = document.createElement("td");
-    let tdNota = document.createElement("td");
-    let tdFavorito = document.createElement("td");
-
-    tdData.innerHTML = page.properties["Data"].date.start;
-    tdLivro.innerHTML = page.properties["Livro"].title[0].plain_text;
-    tdAutor.innerHTML = page.properties["Autor"]["multi_select"][0].name;
-    tdGenero.innerHTML = page.properties["Gênero"]["multi_select"][0].name;
-    tdNota.innerHTML = page.properties["Nota"].number;
-    tdFavorito.innerHTML = page.properties["Favorito"]["select"].name;
-
-    tr.appendChild(tdData);
-    tr.appendChild(tdLivro);
-    tr.appendChild(tdAutor);
-    tr.appendChild(tdGenero);
-    tr.appendChild(tdNota);
-    tr.appendChild(tdFavorito);
-
-    document.getElementById("table").appendChild(tr);
-}
+    });        
 
 // // 0 data, 1 livro, 2 autor, 3 genero, 4 nota, 5 favorito;
 // function createTable(bookInfos) {
