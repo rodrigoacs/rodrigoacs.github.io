@@ -47,13 +47,14 @@ async function queryTable() {
 
         const pages = response.results;
         pages.forEach((page) => {
-            console.log(page.properties["Data"].date.start);
-            console.log(page.properties["Livro"].title[0].plain_text);
-            console.log(page.properties["Autor"]["multi_select"][0].name);
-            console.log(page.properties["Gênero"]["multi_select"][0].name);
-            console.log(page.properties["Nota"].number);
-            console.log(page.properties["Favorito"]["select"].name)
-            console.log("");
+            console.log("f");
+            makeTable(page);
+            // console.log(page.properties["Data"].date.start);
+            // console.log(page.properties["Livro"].title[0].plain_text);
+            // console.log(page.properties["Autor"]["multi_select"][0].name);
+            // console.log(page.properties["Gênero"]["multi_select"][0].name);
+            // console.log(page.properties["Nota"].number);
+            // console.log(page.properties["Favorito"]["select"].name)
         });
 
     } catch (error) {
