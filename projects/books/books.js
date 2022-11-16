@@ -1,35 +1,26 @@
-const button = document.getElementById('request-api');
-button.addEventListener('click', queryAPI);
-
-function queryAPI() {
-    const notionToken = document.getElementById("token").value;
-    const options = {
-        method: 'POST',
-        headers: {
-            accept: 'application/json',
-            'Notion-Version': '2022-06-28',
-            'content-type': 'application/json',
-            authorization: `Bearer ${notionToken}`,
-        },
-        mode: 'no-cors',
-        body: JSON.stringify({ page_size: 100 })
-    };
-    console.log(`Bearer ${notionToken}`);
-    fetch('https://api.notion.com/v1/databases/4780343c6bfa45e2bb9299516cf05e3c/query', options)
-        .then(response => response.json())
-        .then(response =>
-            response.data.results.forEach(page => {
-                console.log(page.properties["Data"].date.start);
-                console.log(page.properties["Livro"].title[0].plain_text);
-                console.log(page.properties["Autor"]["multi_select"][0].name);
-                console.log(page.properties["Gênero"]["multi_select"][0].name);
-                console.log(page.properties["Nota"].number);
-                console.log(page.properties["Favorito"]["select"].name)
-                console.log();
-            }))
-        .catch(err => console.error(err));
-}
-
+const notionToken = "";
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    'Notion-Version': '2022-06-28',
+    'Authorization': 'Bearer ' + notionToken
+  },
+  mode: 'no-cors',
+};
+fetch('https://api.notion.com/v1/databases/4780343c6bfa45e2bb9299516cf05e3c', options)
+  .then(response => response.json())
+  .then(response =>
+    response.data.results.forEach(page => {
+      console.log(page.properties["Data"].date.start);
+      console.log(page.properties["Livro"].title[0].plain_text);
+      console.log(page.properties["Autor"]["multi_select"][0].name);
+      console.log(page.properties["Gênero"]["multi_select"][0].name);
+      console.log(page.properties["Nota"].number);
+      console.log(page.properties["Favorito"]["select"].name)
+      console.log();
+    }))
+  .catch(err => console.error(err));
 
 
 // // 0 data, 1 livro, 2 autor, 3 genero, 4 nota, 5 favorito;
