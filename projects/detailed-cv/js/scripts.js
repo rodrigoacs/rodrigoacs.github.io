@@ -32,3 +32,9 @@ window.addEventListener('DOMContentLoaded', event => {
   });
 
 });
+
+function changeColor() {
+  let color = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
+  color = color == '#3ccf4e' ? '#eb1d36' : '#3ccf4e';
+  document.documentElement.style.setProperty('--main-color', color);
+}
