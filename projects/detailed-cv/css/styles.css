@@ -1781,20 +1781,8 @@ section.resume-section .resume-section-content {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--bs-dark);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #94101f;
+  width: 0px;
+  height: 0px;
 }
 
 /* glitch effect by: https://codepen.io/aldrie */
@@ -1862,6 +1850,102 @@ section.resume-section .resume-section-content {
 
   4%, 100% {
     text-shadow: none;
+    transform: none;
+  }
+}
+
+/* required css */
+
+animated-text {
+  display: none;
+  justify-content: var(--animated-align);
+}
+
+animated-char {
+  animation: var(--animated-animation) 80ms linear calc(var(--animated-index) * 80ms) backwards;
+  display: inline-block;
+}
+
+@keyframes rotateFromLeft {
+  from {
+    transform-origin: bottom left;
+    transform: scale(0) rotateZ(90deg);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes rotateFromRight {
+  from {
+    transform-origin: bottom right;
+    transform: scale(0) rotateZ(-90deg);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes fadeSlideToLeft {
+  from {
+    transform-origin: center;
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeSlideToRight {
+  from {
+    transform-origin: center;
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes type {
+  from {
+    visibility: hidden;
+  }
+
+  to {
+    visibility: visible;
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform-origin: bottom;
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    animation-timing-function: cubic-bezier(.8, .1, 0, 1.28);
     transform: none;
   }
 }

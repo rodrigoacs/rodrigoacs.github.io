@@ -8,7 +8,6 @@
 // 
 
 window.addEventListener('DOMContentLoaded', event => {
-
   // Activate Bootstrap scrollspy on the main nav element
   const sideNav = document.body.querySelector('#sideNav');
   if (sideNav) {
@@ -30,9 +29,9 @@ window.addEventListener('DOMContentLoaded', event => {
       }
     });
   });
-
 });
 
+// page color js
 function changeColor() {
   let color = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
   color = color == '#3ccf4e' ? '#eb1d36' : '#3ccf4e';

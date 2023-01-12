@@ -12,22 +12,24 @@
   <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
   <!-- Cooltipz.css v:2.1.1 | MIT License | github.com/jackdomleo7/Cooltipz.css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cooltipz-css@2.1.1/cooltipz.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link href="css/styles.css" rel="stylesheet" />
 </head>
 
 <body id="page-top" class="pattern2">
   <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" data-aos="fade-right">
     <a class="navbar-brand js-scroll-trigger">
-      <span class="d-block d-lg-none">Rodrigo Soares</span>
-      <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+      <span class="d-block d-lg-none" data-aos="fade-right">Rodrigo Soares</span>
+      <span class="d-none d-lg-block" data-aos="fade-right"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
           src="assets/img/profile.jpg" alt="..." /></span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
       aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
         class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav" data-aos="fade-right">
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Sobre</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiência</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Formação</a></li>
@@ -43,21 +45,23 @@
     <section class="resume-section" id="about">
       <div class="resume-section-content">
         <h1 class="mb-0">
-          <div class="stack" style="--stacks: 3;">
+          <div class="stack" style="--stacks: 3;" data-aos="fade-right">
             <span style="--index: 0;">rodrigo soares</span>
             <span style="--index: 1;">rodrigo soares</span>
             <span style="--index: 2;">rodrigo soares</span>
           </div>
           <!-- <span class="text-primary">Soares</span> -->
         </h1>
-        <div class="subheading mb-5">
+        <div class="subheading mb-5" data-aos="fade-right">
           Minas Gerais, Brasil <button onclick="changeColor()">·</button> <a
             href="mailto:rodrigohths@gmail.com">rodrigohths@gmail.com</a>
         </div>
-        <p class="lead mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto eum excepturi, quo voluptas
+        <p class="lead mb-5" data-aos="fade-right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto eum
+          excepturi, quo
+          voluptas
           ad id recusandae reprehenderit minima, vero ipsum voluptatibus! Mollitia architecto fugiat deleniti ut,
           molestiae voluptate culpa suscipit.</p>
-        <div class="social-icons">
+        <div class="social-icons" data-aos="fade-right">
           <a class="social-icon" href="https://www.linkedin.com/in/rodrigoacs/"><i class="fab fa-linkedin-in"></i></a>
           <a class="social-icon" href="https://github.com/rodrigoacs"><i class="fab fa-github"></i></a>
         </div>
@@ -65,7 +69,7 @@
     </section>
     <hr />
     <!-- Experience-->
-    <section class="resume-section" id="experience">
+    <section class="resume-section" id="experience" data-aos="fade-right">
       <div class="resume-section-content">
         <h2 class="mb-5">Experiência</h2>
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -80,7 +84,7 @@
     </section>
     <hr />
     <!-- Education-->
-    <section class="resume-section" id="education">
+    <section class="resume-section" id="education" data-aos="fade-right">
       <div class="resume-section-content">
         <h2 class="mb-5">formação</h2>
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -105,7 +109,7 @@
     </section>
     <hr />
     <!-- Skills-->
-    <section class="resume-section" id="skills">
+    <section class="resume-section" id="skills" data-aos="fade-right">
       <div class="resume-section-content">
         <h2 class="mb-5">Habilidades</h2>
         <div class="subheading mb-3">Linguagens e ferramentas</div>
@@ -164,7 +168,7 @@
     </section>
     <hr />
     <!-- Interests-->
-    <section class="resume-section" id="interests">
+    <section class="resume-section" id="interests" data-aos="fade-right">
       <div class="resume-section-content">
         <h2 class="mb-5">Interesses</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis magni in sapiente possimus ea asperiores
@@ -174,7 +178,7 @@
     </section>
     <hr />
     <!-- Projects-->
-    <section class="resume-section" id="projects">
+    <section class="resume-section" id="projects" data-aos="fade-right">
       <div class="resume-section-content">
         <h2 class="mb-5">Projetos</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque optio, veniam mollitia voluptate odit
@@ -182,12 +186,16 @@
         </p>
       </div>
     </section>
-    <hr />
   </div>
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
   <script src="js/scripts.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>
