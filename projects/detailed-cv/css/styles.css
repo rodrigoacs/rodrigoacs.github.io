@@ -210,10 +210,6 @@ button {
   display: none
 }
 
-[type=button], [type=reset], [type=submit], button {
-  -webkit-appearance: button
-}
-
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
   cursor: pointer
 }
@@ -229,11 +225,6 @@ button {
 
 ::-webkit-inner-spin-button {
   height: auto
-}
-
-[type=search] {
-  outline-offset: -2px;
-  -webkit-appearance: textfield
 }
 
 ::-webkit-search-decoration {
@@ -1947,4 +1938,8 @@ animated-char {
     animation-timing-function: cubic-bezier(.8, .1, 0, 1.28);
     transform: none;
   }
+}
+
+.print {
+  display: none;
 }
