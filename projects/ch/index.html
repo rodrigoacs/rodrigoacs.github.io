@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+  <link rel="manifest" href="./assets/site.webmanifest">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
   <style>
     div {
@@ -13,62 +17,37 @@
     input {
       display: inline-block;
     }
+
+    footer {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
   </style>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="workedHours.js"></script>
-  <title>Document</title>
+  <title>calculadora de intervalos de tempo</title>
 </head>
 
-<body>
-  <div class="interval">
-    <input type="time">
-    <input type="time">
-  </div>
-  <div class="interval">
-    <input type="time">
-    <input type="time">
-  </div>
-  <div class="interval">
-    <input type="time">
-    <input type="time">
-  </div>
-  <div class="interval">
-    <input type="time">
-    <input type="time">
-  </div>
-  <div class="interval">
-    <input type="time">
-    <input type="time">
-  </div>
-  <div class="interval">
-    <input type="time">
-    <input type="time">
-  </div>
-  <div class="interval">
-    <input type="time">
-    <input type="time">
-  </div>
-  <div class="interval">
-    <input type="time">
-    <input type="time">
-  </div>
-  <div class="interval">
-    <input type="time">
-    <input type="time">
-  </div>
-  <div class="interval">
-    <input type="time">
-    <input type="time">
+<body class="times">
+  <div>
+    <button onclick="addActivity()">+</button>
+    <button onclick="calculateAll()" id="calculate">calcular</button>
   </div>
   <div>
-    <button onclick="calculate2()" id="calculate">calcular</button>
-  </div>
-  <div>
+    <p>&nbsp;</p>
     <p id="result"></p>
   </div>
+  <div class="interval">
+    <input type="time">
+    <input type="time">
+    <input type="text">
+  </div>
 
+  <footer>&nbsp;calculadora de intervalos de tempo v1.1</footer>
 </body>
 
 </html>
