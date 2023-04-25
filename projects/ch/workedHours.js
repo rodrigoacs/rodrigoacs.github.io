@@ -8,6 +8,7 @@ function calculateIndividual(initial, final) {
 function calculateAll() {
   let intervals = document.getElementsByClassName("interval")
   let spentTime = 0
+  let formatedTime = []
   for (let i = 0; i < intervals.length; i++) {
     let initial = intervals[i].children[0].value
     let final = intervals[i].children[1].value
@@ -16,15 +17,20 @@ function calculateAll() {
       break
     }
 
-    spentTime += calculateIndividual(initial, final)
+    let spentIndividual = calculateIndividual(initial, final)
+    formatedTime = formatTime(spentIndividual)
+    intervals[i].children[3].value = `${formatedTime[0]} hora(s) e ${formatedTime[1]} minuto(s)`
+    spentTime += spentIndividual
   }
-  printResult(spentTime)
+
+  formatedTime = formatTime(spentTime)
+  document.getElementById("result").innerText = `${formatedTime[0]} hora(s) e ${formatedTime[1]} minuto(s)`
 }
 
-function printResult(time) {
+function formatTime(time) {
   let hours = parseInt(time / 60)
   let minutes = time - hours * 60
-  document.getElementById("result").innerText = `${hours} horas e ${minutes} minutos`
+  return [hours, minutes]
 }
 
 function addActivity() {
@@ -37,10 +43,14 @@ function addActivity() {
   inputTime2.type = "time"
   let inputText = document.createElement("input")
   inputText.type = "text"
+  let individualTime = document.createElement("input")
+  individualTime.type = "text"
+  individualTime.readOnly = true
 
   div.appendChild(inputTime)
   div.appendChild(inputTime2)
   div.appendChild(inputText)
+  div.appendChild(individualTime)
 
   times[times.length - 1].appendChild(div)
 }
