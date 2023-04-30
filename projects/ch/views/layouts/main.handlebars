@@ -28,27 +28,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="workedHours.js"></script>
+  <!-- <script src="app.js"></script> -->
   <title>calculadora de intervalos de tempo</title>
 </head>
 
 <body class="times">
-  <div>
-    <button onclick="addActivity()">+</button>
-    <button onclick="calculateAll()" id="calculate">calcular</button>
-  </div>
-  <div>
-    <p>&nbsp;</p>
-    <p id="result"></p>
-  </div>
-  <div class="interval">
-    <input type="time">
-    <input type="time">
-    <input type="text">
-    <input type="text" readonly></input>
-  </div>
-
-  <footer>&nbsp;calculadora de intervalos de tempo v1.2</footer>
+  {{{body}}}
 </body>
 
 <script>
@@ -76,7 +61,7 @@
       intervals[i].children[3].value = `${formatedTime[0]} hora(s) e ${formatedTime[1]} minuto(s)`
       spentTime += spentIndividual
     }
-
+    console.log('teste')
     formatedTime = formatTime(spentTime)
     document.getElementById("result").innerText = `${formatedTime[0]} hora(s) e ${formatedTime[1]} minuto(s)`
   }
@@ -87,18 +72,23 @@
     return [hours, minutes]
   }
 
+  let counter = 0;
   function addActivity() {
-    let times = document.getElementsByClassName("times")
+    let form = document.getElementById("form")
     let div = document.createElement("div")
     div.classList = "interval"
     let inputTime = document.createElement("input")
     inputTime.type = "time"
+    inputTime.name = "inicialTime"
     let inputTime2 = document.createElement("input")
     inputTime2.type = "time"
+    inputTime2.name = "finalTime"
     let inputText = document.createElement("input")
     inputText.type = "text"
+    inputText.name = "desc"
     let individualTime = document.createElement("input")
     individualTime.type = "text"
+    individualTime.name = "resultTime"
     individualTime.readOnly = true
 
     div.appendChild(inputTime)
@@ -106,8 +96,10 @@
     div.appendChild(inputText)
     div.appendChild(individualTime)
 
-    times[times.length - 1].appendChild(div)
+    form.appendChild(div)
+    counter++
   }
+
 </script>
 
 </html>
