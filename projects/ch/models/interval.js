@@ -9,13 +9,4 @@ const Interval = db.sequelize.define("intervals", {
   }
 })
 
-const Users = db.sequelize.define("users", {
-  username: {
-    type: db.Sequelize.STRING
-  },
-  password: {
-    type: db.Sequelize.STRING
-  }
-})
-
 module.exports = Interval
