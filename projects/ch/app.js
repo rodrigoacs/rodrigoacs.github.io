@@ -26,22 +26,10 @@ app.get("/home", function (req, res) {
 })
 
 app.post("/save", function (req, res) {
-  // se der um log no infos aqui no inicio e um log no clearInfo lá no final da pra entender oq isso faz
-  // pega as informações dos campos, torna inteligíveleu e salva no db
-  let infos = `${req.body.inicialTime};${req.body.finalTime};${req.body.desc};${req.body.resultTime}`.split(";")
-  let clearInfo = []
-  for (let i = 0; i < infos.length; i++) {
-    infos[i] = infos[i].split(",")
-  }
-  for (let i = 0; i < 4; i++) {
-    for (let j = 0; j < infos[i].length; j++) {
-      clearInfo[j] += ` ${infos[i][j]}`
-    }
-  }
-  for (let i = 0; i < clearInfo.length; i++) {
-    clearInfo[i] = clearInfo[i].split("undefined ")[1]
+  const { inicialTime, finalTime, desc, resultTime } = req.body;
+  for (let i = 0; i < inicialTime.length; i++) {
     Interval.create({
-      interval: `${clearInfo[i]}`,
+      interval: `${inicialTime[i]} ${finalTime[i]} ${desc[i]} ${resultTime[i]}`,
       user_id: req.session.userId
     })
   }
@@ -52,7 +40,9 @@ app.post("/save", function (req, res) {
 
 app.get("/delete/:id", function (req, res) {
   Interval.destroy({ where: { 'id': req.params.id } })
-  res.redirect("/home")
+  setTimeout(() => {
+    res.redirect("/home")
+  }, 500);
 })
 
 app.get("/", function (req, res) {
