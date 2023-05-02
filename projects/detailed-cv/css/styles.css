@@ -16,11 +16,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --main-color: #eb1d36;
+  --main-color: #7D26CD;
   --bs-white: #f2f2f2;
   --bs-dark: #131313;
   --bs-body-font-family: 'Roboto Slab', serif;
-  --bs-body-bg: #fff
+  --bs-body-bg: #fff;
 }
 
 *::selection {
@@ -60,9 +60,8 @@ body {
 hr {
   margin: 1rem;
   color: inherit;
-  background-color: currentColor;
+  background-color: var(--bs-body-bg);
   border: 0;
-  opacity: .25
 }
 
 hr:not([size]) {
@@ -151,7 +150,7 @@ b {
 
 a {
   color: var(--main-color);
-  text-decoration: underline
+  text-decoration: none
 }
 
 a:hover {
@@ -1630,7 +1629,8 @@ body {
 @media (min-width:992px) {
   body {
     padding-top: 0;
-    padding-left: 14rem
+    padding-left: 15vw;
+    padding-right: 15vw;
   }
 }
 
@@ -1757,7 +1757,7 @@ section.resume-section .resume-section-content {
 
 @media (min-width:768px) {
   section.resume-section {
-    min-height: 100vh
+    min-height: 80vh
   }
 }
 

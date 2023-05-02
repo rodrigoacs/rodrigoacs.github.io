@@ -3,37 +3,3 @@
 * Copyright 2013-2022 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 */
-//
-// Scripts
-// 
-
-window.addEventListener('DOMContentLoaded', event => {
-  // Activate Bootstrap scrollspy on the main nav element
-  const sideNav = document.body.querySelector('#sideNav');
-  if (sideNav) {
-    new bootstrap.ScrollSpy(document.body, {
-      target: '#sideNav',
-      offset: 74,
-    });
-  };
-
-  // Collapse responsive navbar when toggler is visible
-  const navbarToggler = document.body.querySelector('.navbar-toggler');
-  const responsiveNavItems = [].slice.call(
-    document.querySelectorAll('#navbarResponsive .nav-link')
-  );
-  responsiveNavItems.map(function (responsiveNavItem) {
-    responsiveNavItem.addEventListener('click', () => {
-      if (window.getComputedStyle(navbarToggler).display !== 'none') {
-        navbarToggler.click();
-      }
-    });
-  });
-});
-
-// page color js
-function changeColor() {
-  let color = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
-  color = color == '#3ccf4e' ? '#eb1d36' : '#3ccf4e';
-  document.documentElement.style.setProperty('--main-color', color);
-}
