@@ -8,17 +8,32 @@
   <meta name="author" content="" />
   <title>Rodrigo</title>
   <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
   <!-- Cooltipz.css v:2.1.1 | MIT License | github.com/jackdomleo7/Cooltipz.css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cooltipz-css@2.1.1/cooltipz.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
   <link href="css/styles.css" rel="stylesheet" media="screen" />
   <link href="css/print.css" rel="stylesheet" media="print" />
 </head>
 
 <body id="page-top" class="pattern2">
+  <nav class="navbar">
+    <button class="btn-label" aria-label="sobre mim" data-cooltipz-dir="left">
+      <a class="navbar-item" href="#about"><i class="fa-solid fa-user"></i></a>
+    </button>
+    <button class="btn-label" aria-label="experiência" data-cooltipz-dir="left">
+      <a class="navbar-item" href="#experience"><i class="fa-solid fa-briefcase"></i></a>
+    </button>
+    <button class="btn-label" aria-label="formação" data-cooltipz-dir="left">
+      <a class="navbar-item" href="#education"><i class="fa-solid fa-graduation-cap"></i></a>
+    </button>
+    <button class="btn-label" aria-label="habilidades" data-cooltipz-dir="left">
+      <a class="navbar-item" href="#skills"><i class="fa-solid fa-bars-progress"></i></a>
+    </button>
+    <button class="btn-label" aria-label="projetos" data-cooltipz-dir="left">
+      <a class="navbar-item" href="#projects"><i class="fa-solid fa-folder-open"></i></a>
+    </button>
+    <button class="sandwich" id="sandwich"><i class="fa-solid fa-bars"></i></button>
+  </nav>
   <!-- Page Content-->
   <div class="container-fluid p-0">
     <!-- About-->
@@ -29,7 +44,8 @@
           <span class="text-primary">Soares</span>
         </h1>
         <div class="subheading mb-5" data-aos="fade-right">
-          Minas Gerais, Brasil <button>·</button> <a href="mailto:rodrigohths@gmail.com">rodrigohths@gmail.com</a>
+          Minas Gerais, Brasil <button onclick="rgbOn()">·</button> <a
+            href="mailto:rodrigohths@gmail.com">rodrigohths@gmail.com</a>
         </div>
         <p class="lead mb-5" data-aos="fade-right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto eum
           excepturi, quo
@@ -37,12 +53,18 @@
           ad id recusandae reprehenderit minima, vero ipsum voluptatibus! Mollitia architecto fugiat deleniti ut,
           molestiae voluptate culpa suscipit.</p>
         <div class="social-icons" data-aos="fade-right">
-          <a class="social-icon" href="https://www.linkedin.com/in/rodrigoacs/"><i class="fab fa-linkedin-in"></i></a>
-          <a class="social-icon" href="https://github.com/rodrigoacs"><i class="fab fa-github"></i></a>
+          <button class="btn-label" aria-label="linkedin" data-cooltipz-dir="bottom">
+            <a class="social-icon" href="https://www.linkedin.com/in/rodrigoacs/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+          </button>
+          <button class="btn-label" aria-label="github" data-cooltipz-dir="bottom">
+            <a class="social-icon" href="https://github.com/rodrigoacs" target="_blank"><i
+                class="fa-brands fa-github"></i></i></a>
+          </button>
         </div>
       </div>
     </section>
-      <hr class="hr-text" data-content="▼">
+    <hr class="hr-text" data-content="▼">
     <!-- Experience-->
     <section class="resume-section print" id="experience" data-aos="fade-right">
       <div class="resume-section-content">
@@ -57,7 +79,7 @@
         </div>
       </div>
     </section>
-      <hr class="hr-text" data-content="▼">
+    <hr class="hr-text" data-content="▼">
     <!-- Education-->
     <section class="resume-section print" id="education">
       <div class="resume-section-content">
@@ -84,7 +106,7 @@
         </div>
       </div>
     </section>
-      <hr class="hr-text" data-content="▼">
+    <hr class="hr-text" data-content="▼">
     <!-- Skills-->
     <section class="resume-section print" id="skills" data-aos="fade-right">
       <div class="resume-section-content">
@@ -113,12 +135,12 @@
           </li>
           <li class="list-inline-item" data-aos="fade-right">
             <button aria-label="SQL" data-cooltipz-dir="top">
-              <i class="fa-solid fa-database"></i>
+              <i class="fab fa-solid fa-database"></i>
             </button>
           </li>
           <li class="list-inline-item" data-aos="fade-right">
             <button aria-label="Git" data-cooltipz-dir="top">
-              <i class="fa-brands fa-git-alt"></i>
+              <i class="fab fa-brands fa-git-alt"></i>
             </button>
           </li>
         </ul>
@@ -143,18 +165,7 @@
         </ul>
       </div>
     </section>
-      <hr class="hr-text" data-content="▼">
-    <!-- Interests-->
-    <section class="resume-section" id="interests" data-aos="fade-right">
-      <div class="resume-section-content">
-        <h2 class="mb-5" data-aos="fade-right">Interesses</h2>
-        <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis magni in sapiente
-          possimus ea asperiores
-          quibusdam totam dolore enim. Suscipit eaque molestiae voluptas iure quod repellendus, enim corporis nostrum
-          incidunt.</p>
-      </div>
-    </section>
-      <hr class="hr-text" data-content="▼">
+    <hr class="hr-text" data-content="▼">
     <!-- Projects-->
     <section class="resume-section" id="projects" data-aos="fade-right">
       <div class="resume-section-content">
@@ -166,14 +177,15 @@
       </div>
     </section>
   </div>
-  <!-- Bootstrap core JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Core theme JS-->
-  <script src="js/scripts.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
 </body>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
 
 </html>
