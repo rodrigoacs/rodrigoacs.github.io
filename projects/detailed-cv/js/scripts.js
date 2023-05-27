@@ -6,7 +6,6 @@
 //   })
 // }
 
-
 function minWidth() {
   if (window.innerWidth <= 992) {
     const labels = document.getElementsByClassName("btn-label")
@@ -34,11 +33,9 @@ function minWidth() {
     }
   })
 }
-
 minWidth()
 
 let counter;
-
 function rgbOn() {
   let hueValue = 0
   clearInterval(counter)
@@ -47,5 +44,22 @@ function rgbOn() {
     document.body.style.setProperty('--second-color', `hsl(${hueValue},100%,50%)`)
     hueValue++
     if (hueValue == 360) hueValue = 0
-  }, 5);
+  }, 10);
 }
+
+
+var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+var current = 0;
+var keyHandler = function (event) {
+  if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
+    current = 0;
+    return;
+  }
+  current++;
+  if (pattern.length === current) {
+    current = 0;
+    rgbOn()
+  }
+};
+document.addEventListener('keydown', keyHandler, false);
+// https://gomakethings.com/how-to-create-a-konami-code-easter-egg-with-vanilla-js/
