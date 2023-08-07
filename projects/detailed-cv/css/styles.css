@@ -50,6 +50,7 @@ body {
   background-color: var(--bs-dark);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  flex-direction: column;
 }
 
 .navbar {
@@ -59,8 +60,10 @@ body {
   align-items: center;
   position: sticky;
   height: 50%;
-  top: calc(50% - 100px);
+  top: 92%;
   gap: 10px;
+  flex-direction: row;
+  z-index: 999;
 }
 
 .navbar-item {
@@ -75,7 +78,7 @@ body {
   font-size: 1.5rem;
 }
 
-.sandwich {
+/* .sandwich {
   display: none;
   align-items: center;
   justify-content: center;
@@ -115,7 +118,7 @@ body {
     width: 2rem;
     font-size: 1rem;
   }
-}
+} */
 
 .pattern2 {
   background-color: #000000;
@@ -448,4 +451,3 @@ section.resume-section .resume-section-content {
 .print {
   display: none;
 }
-
