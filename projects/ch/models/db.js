@@ -5,6 +5,8 @@ const sequelize = new Sequelize('hoursapp', 'root', 'sql1405', {
   dialect: "mysql"
 })
 
+sequelize.sync({ force: true })
+
 module.exports = {
   Sequelize: Sequelize,
   sequelize: sequelize

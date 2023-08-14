@@ -1,10 +1,13 @@
 <div>
-  <form action="/login" method="POST">
-    <input type="text" name="user" required> <br>
-    <input type="password" name="password" required> <br>
-    <button type="submit">login</button>
+  <form class="login-form" action="/login" method="POST">
+    <div class="form-floating">
+      <input class="form-control" id="username" type="text" name="user" required> <br>
+      <label for="username">username</label>
+    </div>
+    <div class="form-floating">
+      <input class="form-control" id="password" type="password" name="password" required> <br>
+      <label for="password">password</label>
+    </div>
+    <button class="btn btn-primary" type="submit">login</button>
   </form>
-</div>
-<div>
-  <h3>Sem cadastro? chama no zap</h3>
 </div>
