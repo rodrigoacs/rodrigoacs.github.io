@@ -70,7 +70,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #4e4e4e;
+  color: var(--bs-white);
   background-color: var(--bs-dark);
   height: 3rem;
   width: 3rem;
